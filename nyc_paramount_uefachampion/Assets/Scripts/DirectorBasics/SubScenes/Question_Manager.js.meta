@@ -1,0 +1,78 @@
+- !<AssetImportMetadata/b4231669-3fd3-4756-87c5-4726cee22ff7>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 927205fb-1e6f-4024-8fdd-791471fb9d26
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 927205fb-1e6f-4024-8fdd-791471fb9d26
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> d29b4dde-4abf-402b-bea2-afb4a395c78e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/d29b4dde-4abf-402b-bea2-afb4a395c78e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  ComponentUid: 06316ccc-03f9-447d-b07f-3366028705c3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    answerASceneObject: false
+    answerATextures_0: false
+    answerATextures_1: false
+    answerBSceneObject: false
+    answerBTextures_0: false
+    answerBTextures_1: false
+    answerCSceneObject: false
+    answerCTextures_0: false
+    answerCTextures_1: false
+    delayBetweenRounds: false
+    fadeDuration: false
+    mixDuration: false
+    parent: false
+    questionSceneObject: false
+    questionTextures: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      fadeDuration: !<float> 0.000000
+      mixDuration: !<float> 0.000000
+      delayBetweenRounds: !<float> 0.000000
+      questionSceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      questionTextures: !<reference.Texture[]>
+        []
+      answerASceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      answerATextures_0: !<reference.Texture[]>
+        []
+      answerATextures_1: !<reference.Texture[]>
+        []
+      answerBSceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      answerBTextures_0: !<reference.Texture[]>
+        []
+      answerBTextures_1: !<reference.Texture[]>
+        []
+      answerCSceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      answerCTextures_0: !<reference.Texture[]>
+        []
+      answerCTextures_1: !<reference.Texture[]>
+        []
+  ScriptTypes:
+    -
+      {}
