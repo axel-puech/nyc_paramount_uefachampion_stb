@@ -777,7 +777,7 @@
   Enabled: true
   ScriptAsset: !<reference> 927205fb-1e6f-4024-8fdd-791471fb9d26
   ScriptInputsDefault:
-    {}
+    delayBetweenRounds: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -785,7 +785,8 @@
       parent: !<reference.SceneObject> 6317e7af-f5fa-4861-8288-6c8199a70f29
       fadeDuration: 0.500000
       mixDuration: 0.500000
-      delayBetweenRounds: !<float> 1.000000
+      delayBetweenRounds: !<float> 0.000000
+      numberRounds: 6
       questionSceneObject: !<reference.SceneObject> e2692b33-369a-4050-b6a2-664a20679d22
       questionTextures: !<reference.Texture[]>
         - !<reference> 4e680764-e514-4b1c-8458-ba6c2587285b

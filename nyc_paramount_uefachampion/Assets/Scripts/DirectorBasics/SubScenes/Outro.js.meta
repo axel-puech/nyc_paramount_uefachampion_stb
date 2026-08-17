@@ -1,0 +1,87 @@
+- !<AssetImportMetadata/d6243343-c960-4a04-8319-1c5984d9fca4>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> c9ac9e5f-8a0f-40e2-8280-aa61c657b799
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> c9ac9e5f-8a0f-40e2-8280-aa61c657b799
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> fe178508-38f5-4be9-9d1c-0bf2431abe76
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fe178508-38f5-4be9-9d1c-0bf2431abe76>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  ComponentUid: b8e9a2d8-915e-4d81-a6ac-f1ff9552831f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    background: false
+    club1Background: false
+    club1Color1: false
+    club1Color2: false
+    club1Color3: false
+    club1Logo: false
+    club1Text: false
+    club2Background: false
+    club2Color1: false
+    club2Color2: false
+    club2Color3: false
+    club2Logo: false
+    club2Text: false
+    club3Background: false
+    club3Color1: false
+    club3Color2: false
+    club3Color3: false
+    club3Logo: false
+    club3Text: false
+    clubLogo: false
+    clubText: false
+    parent: false
+    yourClubIs: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      background: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      clubLogo: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      clubText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      yourClubIs: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      club1Background: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club1Logo: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club1Text: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club1Color1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club1Color2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club1Color3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club2Background: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club2Logo: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club2Text: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club2Color1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club2Color2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club2Color3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club3Background: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club3Logo: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club3Text: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      club3Color1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club3Color2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      club3Color3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+  ScriptTypes:
+    -
+      {}

@@ -4,6 +4,7 @@
 //@input float fadeDuration=0.5
 //@input float mixDuration=0.5
 //@input float delayBetweenRounds=1
+//@input int numberRounds=6
 
 //@ui {"widget":"separator"}
 //@ui {"widget":"label", "label":"QUESTIONS "}
@@ -41,14 +42,19 @@ let answerTextureList = [
   [script.answerCTextures_0, script.answerCTextures_1],
 ];
 let answerArray = [];
-const numberRounds = script.questionSceneObject.length;
+const numberRounds = script.numberRounds;
 
 //________Caller________//
+
+const answerCaller = script.subScene.CreateCaller("AnswerEvent", null);
 //________Listener________//
 //________DelayEvent________//
 
 //____FadeImageDelay____//
 const nextAnswetEvent = script.subScene.CreateEvent("DelayedCallbackEvent", nextAnswer);
+const endAnswerEvent = script.subScene.CreateEvent("DelayedCallbackEvent", endAnswer);
+
+const questionImage = script.questionSceneObject.getComponent("Component.Image");
 
 //_________________________Director_Functions_____________________//
 function Start() {
@@ -56,6 +62,9 @@ function Start() {
 }
 
 function OnLateStart() {
+  fadeQuestion.GoTo(1);
+  setQuestionTexture();
+
   answerArray.forEach((element) => {
     element._anims.fade.GoTo(1);
     element.setTexture();
@@ -65,32 +74,63 @@ function OnLateStart() {
 function Update() {}
 function Stop() {
   currentRound = 0;
+  fadeQuestion.Reset();
+  answerArray.forEach((element) => {
+    element.Reset();
+  });
 }
 
 //___________________________Functions__________________________//
 
+function setQuestionTexture(currentRound = 0) {
+  questionImage.mainPass.baseTex = script.questionTextures[currentRound];
+}
+
 function answerClicked() {
-  answerArray.forEach((element) => {
-    element.ToggleInteraction(false);
-  });
-  nextAnswetEvent.event.reset(script.delayBetweenRounds);
+  if (currentRound < numberRounds) {
+    answerArray.forEach((element) => {
+      element.ToggleInteraction(false);
+    });
+    nextAnswetEvent.event.reset(script.delayBetweenRounds);
+  } else {
+    endAnswerEvent.event.reset(script.delayBetweenRounds);
+  }
 }
 
 function nextAnswer() {
   answerArray.forEach((element) => {
     element._anims.fade.GoTo(0);
   });
+  fadeQuestion.GoTo(0);
   currentRound++;
 }
 
-function resetAnswer() {
+function endAnswer() {
   answerArray.forEach((element) => {
-    element.setTexture(currentRound);
-    element.Reset();
-    element._anims.fade.GoTo(1);
+    element._anims.fade.GoTo(0);
   });
 }
+
+function resetAnswer() {
+  if (currentRound < numberRounds) {
+    answerArray.forEach((element) => {
+      element.setTexture(currentRound);
+      element.Reset();
+      element._anims.fade.GoTo(1);
+    });
+    fadeQuestion.Reset();
+    setQuestionTexture(currentRound);
+    fadeQuestion.GoTo(1);
+  } else {
+    script.subScene.CallEnd(null);
+  }
+}
+
 //___________________________Animations_________________________//
+
+const fadeQuestion = new Animation(script.getSceneObject(), script.fadeDuration, (ratio) => {
+  questionImage.mainPass.baseColor = new vec4(1, 1, 1, ratio);
+});
 
 //__________________________Classes_____________________________//
 class Answer {
@@ -101,7 +141,6 @@ class Answer {
     this._image = this._obj.getComponent("Component.Image");
     this._textureNormal = texturesNormal;
     this._textureSelected = textureSelected;
-
     this._interaction = this._obj.getComponent("Component.InteractionComponent");
     this._interaction.onTap.add(this.OnTap.bind(this));
     this._activeInteraction = false;
@@ -156,6 +195,7 @@ class Answer {
     if (!this._activeInteraction) return;
     this._anims.mix.GoTo(1);
     answerClicked();
+    answerCaller.Call(this._id);
   }
 
   Reset() {

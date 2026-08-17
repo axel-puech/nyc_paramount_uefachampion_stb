@@ -39,6 +39,7 @@
     delayBetweenRounds: false
     fadeDuration: false
     mixDuration: false
+    numberRounds: false
     parent: false
     questionSceneObject: false
     questionTextures: false
@@ -55,6 +56,7 @@
       fadeDuration: !<float> 0.000000
       mixDuration: !<float> 0.000000
       delayBetweenRounds: !<float> 0.000000
+      numberRounds: 0
       questionSceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       questionTextures: !<reference.Texture[]>
         []
