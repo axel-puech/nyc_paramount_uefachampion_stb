@@ -1,8 +1,8 @@
-- !<AssetImportMetadata/e178a7f6-851d-e068-6011-b0d86f6e13f4>
+- !<AssetImportMetadata/41e619f6-67e9-4126-a3e3-0c20f5fcba11>
   ImportedAssetIds:
-    NativePackageDescriptor: !<reference> 560edf3c-6688-4c1a-a2ed-b2e82aadd29b
-  ImporterName: NativePackageDescriptorImporter
-  PrimaryAsset: !<reference> 560edf3c-6688-4c1a-a2ed-b2e82aadd29b
+    Material: !<reference> 9ce7c487-7761-4068-b264-9b062cf69223
+  ImporterName: MaterialImporter
+  PrimaryAsset: !<reference> 9ce7c487-7761-4068-b264-9b062cf69223
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:

@@ -72,6 +72,7 @@ function Stop() {
 //___________________________Functions__________________________//
 
 function setOutroTextures() {
+  print("global.matchingClubId: " + global.matchingClubId);
   if (global.matchingClubId < 0) return;
   backgroundImage.mainPass.baseTex = backgroundTextures[global.matchingClubId];
   clubTextImage.mainPass.baseTex = clubTextTextures[global.matchingClubId];

@@ -1,4 +1,4 @@
-- !<AssetImportMetadata/5a511cb6-225c-a2da-3d3e-98e80d14cea2>
+- !<AssetImportMetadata/b8daeb88-e22e-9c8f-63dd-58be5c94ad3a>
   ImportedAssetIds:
     ObjectPrefab: !<reference> 4829461f-458b-45f5-99a3-5352cd6d03eb
   ImporterName: ObjectPrefabImporter
@@ -6,7 +6,7 @@
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
-    AssetLibraryId: 6q3t8oUU9qolylknHbjjJV
+    {}
   AssetDataMap:
     ObjectPrefab: !<own> 02e3eaac-47da-4c2d-a280-f7536c485a89
   DependentFiles:

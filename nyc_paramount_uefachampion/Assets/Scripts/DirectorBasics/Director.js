@@ -12,11 +12,14 @@ function OnStart() {
 //global.touchSystem.touchBlocking = true
 function OnSceneEnded(sceneName, params) {
   switch (sceneName) {
+    case "Intro":
+      director.GoToScene("Main", false, false);
+      break;
     case "Main":
       director.GoToScene("Outro", false, false);
       break;
     case "Outro":
-      director.GoToScene("Main", false, false);
+      director.GoToScene("Intro", false, false);
       break;
   }
 }
