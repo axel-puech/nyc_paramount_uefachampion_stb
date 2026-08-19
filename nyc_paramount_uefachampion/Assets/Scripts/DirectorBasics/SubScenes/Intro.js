@@ -3,6 +3,9 @@
 //@input SceneObject blackOverlay
 //@input SceneObject chooseYourClub
 
+//@input SceneObject hintIntro
+//@input SceneObject tapToStart
+
 //@input float amplitude
 //@input float duration
 //@input float fade
@@ -28,11 +31,15 @@ let floatingClubArray = [];
 let tapEvent = script.subScene.CreateEvent("TapEvent", OnTap);
 const blackOverlayImage = script.blackOverlay.getComponent("Image");
 const chooseYourClubImage = script.chooseYourClub.getComponent("Image");
+const hintIntroImage = script.hintIntro.getComponent("Image");
+const tapToStartImage = script.tapToStart.getComponent("Image");
+
 //_________________________Director_Functions_____________________//
 function Start() {
   Instantiation();
   fadeBlackOverlay.JumpTo(0.5);
   fadeChooseYourClub.JumpTo(1);
+  fadeHint.JumpTo(1);
 }
 function OnLateStart() {
   floatingClubArray.forEach((element, index) => {
@@ -44,6 +51,7 @@ function Update() {}
 function Stop() {
   fadeBlackOverlay.Reset();
   fadeChooseYourClub.Reset();
+  fadeHint.Reset();
 }
 //___________________________Functions__________________________//
 
@@ -54,6 +62,7 @@ function OnTap() {
   hasTapped = true;
   fadeBlackOverlay.GoTo(0);
   fadeChooseYourClub.GoTo(0);
+  fadeHint.GoTo(0);
 
   floatingClubArray.forEach((element, index) => {
     element._anims.fade.GoTo(0);
@@ -71,8 +80,13 @@ fadeBlackOverlay.OnEnd = function (ratio) {
     script.subScene.CallEnd(null);
   }
 };
-const fadeChooseYourClub = new Animation(script.getSceneObject(), 1, (ratio) => {
+const fadeChooseYourClub = new Animation(script.getSceneObject(), 0.5, (ratio) => {
   chooseYourClubImage.mainPass.alphaRatio = ratio;
+});
+
+const fadeHint = new Animation(script.getSceneObject(), 0.5, (ratio) => {
+  hintIntroImage.mainPass.alphaRatio = ratio;
+  tapToStartImage.mainPass.alphaRatio = ratio;
 });
 
 //__________________________Classes_____________________________//

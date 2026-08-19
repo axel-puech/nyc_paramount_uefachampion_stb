@@ -33,7 +33,9 @@
     duration: false
     fade: false
     floatingClub: false
+    hintIntro: false
     parent: false
+    tapToStart: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -48,6 +50,8 @@
         []
       blackOverlay: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       chooseYourClub: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hintIntro: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tapToStart: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       amplitude: !<float> 0.000000
       duration: !<float> 0.000000
       fade: !<float> 0.000000

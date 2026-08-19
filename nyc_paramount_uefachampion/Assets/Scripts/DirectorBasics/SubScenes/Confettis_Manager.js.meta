@@ -27,7 +27,37 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    arsenalColor1: false
+    arsenalColor2: false
+    arsenalColor3: false
+    bayernColor1: false
+    bayernColor2: false
+    bayernColor3: false
+    bvbColor1: false
+    bvbColor2: false
+    bvbColor3: false
+    fcbColor1: false
+    fcbColor2: false
+    fcbColor3: false
+    lfcColor1: false
+    lfcColor2: false
+    lfcColor3: false
+    manCityColor1: false
+    manCityColor2: false
+    manCityColor3: false
+    manUColor1: false
+    manUColor2: false
+    manUColor3: false
+    milanoColor1: false
+    milanoColor2: false
+    milanoColor3: false
     parent: false
+    psgColor1: false
+    psgColor2: false
+    psgColor3: false
+    realColor1: false
+    realColor2: false
+    realColor3: false
     vfxConfettis: false
   ScriptTypesHidden:
     {}
@@ -40,6 +70,36 @@
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       vfxConfettis: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      arsenalColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      arsenalColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      arsenalColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      bayernColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      bayernColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      bayernColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      bvbColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      bvbColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      bvbColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      fcbColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      fcbColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      fcbColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      lfcColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      lfcColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      lfcColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      manCityColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      manCityColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      manCityColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      manUColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      manUColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      manUColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      milanoColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      milanoColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      milanoColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      psgColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      psgColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      psgColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      realColor1: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      realColor2: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      realColor3: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
   ScriptTypes:
     -
       {}

@@ -1,37 +1,68 @@
 //@input SceneObject parent
 
 //@input SceneObject background
-//@input SceneObject clubLogo
-//@input SceneObject clubText
-//@input SceneObject yourClubIs
+//@input SceneObject commercialText
+//@input SceneObject finalMessage
 
 //@ui {"widget":"separator"}
-//@ui {"widget":"label", "label":"CLUB 1 "}
-//@input Asset.Texture club1Background
-//@input Asset.Texture club1Logo
-//@input Asset.Texture club1Text
-
-//@input vec4 club1Color1 {"widget":"color"}
-//@input vec4 club1Color2 {"widget":"color"}
-//@input vec4 club1Color3 {"widget":"color"}
+//@ui {"widget":"label", "label":"ARSENAL "}
+//@input Asset.Texture arsenalBackground
+//@input Asset.Texture arsenalCommercialText
+//@input Asset.Texture arsenalFinalMessage
 
 //@ui {"widget":"separator"}
-//@ui {"widget":"label", "label":"CLUB 2 "}
-//@input Asset.Texture club2Background
-//@input Asset.Texture club2Logo
-//@input Asset.Texture club2Text
-//@input vec4 club2Color1 {"widget":"color"}
-//@input vec4 club2Color2 {"widget":"color"}
-//@input vec4 club2Color3 {"widget":"color"}
+//@ui {"widget":"label", "label":"BAYERN "}
+//@input Asset.Texture bayernBackground
+//@input Asset.Texture bayernCommercialText
+//@input Asset.Texture bayernFinalMessage
 
 //@ui {"widget":"separator"}
-//@ui {"widget":"label", "label":"CLUB 3 "}
-//@input Asset.Texture club3Background
-//@input Asset.Texture club3Logo
-//@input Asset.Texture club3Text
-//@input vec4 club3Color1 {"widget":"color"}
-//@input vec4 club3Color2 {"widget":"color"}
-//@input vec4 club3Color3 {"widget":"color"}
+//@ui {"widget":"label", "label":"BVB "}
+//@input Asset.Texture bvbBackground
+//@input Asset.Texture bvbCommercialText
+//@input Asset.Texture bvbFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"FCB "}
+//@input Asset.Texture fcbBackground
+//@input Asset.Texture fcbCommercialText
+//@input Asset.Texture fcbFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"LFC "}
+//@input Asset.Texture lfcBackground
+//@input Asset.Texture lfcCommercialText
+//@input Asset.Texture lfcFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"MAN CITY "}
+//@input Asset.Texture manCityBackground
+//@input Asset.Texture manCityCommercialText
+//@input Asset.Texture manCityFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"MAN U "}
+//@input Asset.Texture manUBackground
+//@input Asset.Texture manUCommercialText
+//@input Asset.Texture manUFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"MILANO "}
+//@input Asset.Texture milanoUBackground
+//@input Asset.Texture milanoUCommercialText
+//@input Asset.Texture milanoUFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"PSG "}
+//@input Asset.Texture psgUBackground
+//@input Asset.Texture psgUCommercialText
+//@input Asset.Texture psgUFinalMessage
+
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"REAL "}
+//@input Asset.Texture realBackground
+//@input Asset.Texture realCommercialText
+//@input Asset.Texture realFinalMessage
 
 //_________________________Director Setup_________________________//
 script.subScene = new global.SubScene(script, script.parent);
@@ -42,26 +73,57 @@ script.subScene.SetUpdate(Update);
 //__________________________Variables_____________________________//
 
 const backgroundImage = script.background.getComponent("Component.Image");
-const clubLogoImage = script.clubLogo.getComponent("Component.Image");
-const clubTextImage = script.clubText.getComponent("Component.Image");
-const yourClubIsImage = script.yourClubIs.getComponent("Component.Image");
+const commercialTextImage = script.commercialText.getComponent("Component.Image");
+const finalMessageImage = script.finalMessage.getComponent("Component.Image");
 
-const outroElements = [backgroundImage, clubLogoImage, clubTextImage, yourClubIsImage];
+const outroElements = [backgroundImage, commercialTextImage, finalMessageImage];
 
-const backgroundTextures = [script.club1Background, script.club2Background, script.club3Background];
-const clubLogoTextures = [script.club1Logo, script.club2Logo, script.club3Logo];
-const clubTextTextures = [script.club1Text, script.club2Text, script.club3Text];
+const backgroundTextures = [
+  script.arsenalBackground,
+  script.bayernBackground,
+  script.bvbBackground,
+  script.fcbBackground,
+  script.lfcBackground,
+  script.manCityBackground,
+  script.manUBackground,
+  script.milanoUBackground,
+  script.psgUBackground,
+  script.realBackground,
+];
+const commercialTextTextures = [
+  script.arsenalCommercialText,
+  script.bayernCommercialText,
+  script.bvbCommercialText,
+  script.fcbCommercialText,
+  script.lfcCommercialText,
+  script.manCityCommercialText,
+  script.manUCommercialText,
+  script.milanoUCommercialText,
+  script.psgUCommercialText,
+  script.realCommercialText,
+];
+const finalMessageTextures = [
+  script.arsenalFinalMessage,
+  script.bayernFinalMessage,
+  script.bvbFinalMessage,
+  script.fcbFinalMessage,
+  script.lfcFinalMessage,
+  script.manCityFinalMessage,
+  script.manUFinalMessage,
+  script.milanoUFinalMessage,
+  script.psgUFinalMessage,
+  script.realFinalMessage,
+];
 
 //________Caller________//
 //________Listener________//
 //________DelayEvent________//
 
 //_________________________Director_Functions_____________________//
-function Start() {
-  setOutroTextures();
-}
+function Start() {}
 function OnLateStart() {
   fadeOutro.GoTo(1);
+  setOutroTextures();
 }
 function Update() {}
 
@@ -75,8 +137,8 @@ function setOutroTextures() {
   print("global.matchingClubId: " + global.matchingClubId);
   if (global.matchingClubId < 0) return;
   backgroundImage.mainPass.baseTex = backgroundTextures[global.matchingClubId];
-  clubTextImage.mainPass.baseTex = clubTextTextures[global.matchingClubId];
-  clubLogoImage.mainPass.baseTex = clubLogoTextures[global.matchingClubId];
+  commercialTextImage.mainPass.baseTex = commercialTextTextures[global.matchingClubId];
+  finalMessageImage.mainPass.baseTex = finalMessageTextures[global.matchingClubId];
 }
 
 //___________________________Animations_________________________//

@@ -163,6 +163,7 @@ class Answer {
     this._anims.mix = new Animation(script.getSceneObject(), script.mixDuration, (ratio) => {
       this._image.mainPass.mixRatio = ratio;
     });
+    this._anims.mix.Easing = QuadraticInOut;
     this._anims.mix.OnEnd = this.OnMixAnimEnd.bind(this);
   }
 
