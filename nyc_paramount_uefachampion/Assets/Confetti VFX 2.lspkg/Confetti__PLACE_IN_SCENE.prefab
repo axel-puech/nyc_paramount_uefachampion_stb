@@ -1,14 +1,14 @@
-- !<ObjectPrefab/4829461f-458b-45f5-99a3-5352cd6d03eb>
+- !<ObjectPrefab/e30647ef-d5c7-47e5-9bd2-ce98fb4b1d16>
   PackagePath: ""
   objects:
-    - !<own> 2cf721c6-0ab2-44f1-b715-1ae81c41bac6
+    - !<own> b907bdb3-1fb8-40f2-93a0-7b64981b1870
   LazyLoading: false
   RetainAssets: true
   PreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/2cf721c6-0ab2-44f1-b715-1ae81c41bac6>
+- !<SceneObject/b907bdb3-1fb8-40f2-93a0-7b64981b1870>
   PrefabRemaps:
-    - 2cf721c6-0ab2-44f1-b715-1ae81c41bac6: 2cf721c6-0ab2-44f1-48ea-e517e3be4539
-    - d334ec47-5c7d-4e9c-91ff-61655f6119b4: d334ec47-5c7d-4e9c-6e00-9e9aa09ee64b
+    - b907bdb3-1fb8-40f2-93a0-7b64981b1870: 5d256efa-21cb-4d8c-bf2b-2614e9841da5
+    - e2326e93-fee0-42d8-833c-cf4c77638abc: 4ad21175-4903-420b-8718-43c6e55e6e39
   Name: Confetti__PLACE_IN_SCENE
   Enabled: true
   Layers: 1
@@ -20,8 +20,8 @@
   Children:
     []
   Components:
-    - !<own> d334ec47-5c7d-4e9c-91ff-61655f6119b4
-- !<VFXComponent/d334ec47-5c7d-4e9c-91ff-61655f6119b4>
+    - !<own> e2326e93-fee0-42d8-833c-cf4c77638abc
+- !<VFXComponent/e2326e93-fee0-42d8-833c-cf4c77638abc>
   PrefabRemaps:
     []
   Name: VFX

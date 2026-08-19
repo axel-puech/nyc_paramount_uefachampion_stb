@@ -1001,9 +1001,9 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> 35509446-772c-4643-b5b8-d40c7a10fd0a
     - !<own> 015a2178-83e5-412d-a91c-1222627215d1
     - !<own> dd3e21b9-20c4-4a64-be9b-3fc155043a98
-    - !<own> 35509446-772c-4643-b5b8-d40c7a10fd0a
   Components:
     []
 - !<AudioComponent/52994aff-f7e6-4084-ab19-6c822cb51e5c>
@@ -1554,6 +1554,7 @@
   ScriptInputs:
     "":
       parent: !<reference.SceneObject> e0de91fe-4df1-456a-be9d-4484f95a227e
+      vfxConfettis: !<reference.VFXComponent> 9aa88312-5513-4486-a1d2-b0c1a75abf5a
   ScriptTypes:
     "":
       {}
@@ -2419,6 +2420,10 @@
         - !<reference> 136861f9-3b7f-4606-a3a8-3e85324b3d44
         - !<reference> 6bb2d7d7-0e13-4858-b409-3ce8fb6f1f66
       blackOverlay: !<reference.SceneObject> cd85f82b-46cb-4504-a4e5-d9f31dab16b7
+      chooseYourClub: !<reference.SceneObject> 02e1733a-c6de-4cad-8607-5b1c14c0814f
+      amplitude: 0.010000
+      duration: !<float> 2.000000
+      fade: 0.500000
   ScriptTypes:
     "":
       {}
@@ -3248,8 +3253,8 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 30.000000, z: -20.000000}
+    Rotation: {x: 90.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:

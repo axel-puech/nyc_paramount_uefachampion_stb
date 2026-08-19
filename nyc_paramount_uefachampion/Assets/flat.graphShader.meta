@@ -1,6 +1,7 @@
 - !<AssetImportMetadata/a910d336-c03c-4c04-986f-2f6aef800b5c>
   ImportedAssetIds:
     ShaderGraph: !<reference> 0d72ab0d-ef29-4d3e-9b6c-3a683605c92a
+    BinAsset: !<reference> 44311cce-3312-4b87-af49-1a184afef591
   ImporterName: ShaderGraphPassImporter
   PrimaryAsset: !<reference> 0d72ab0d-ef29-4d3e-9b6c-3a683605c92a
   PackageType: NotAPackage
