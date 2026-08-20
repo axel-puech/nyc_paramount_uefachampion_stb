@@ -105,7 +105,7 @@ function OnAnswer(answerId) {
   currentQuestion++;
 
   // Une fois les 6 réponses reçues, l'outro affiche le club au meilleur score.
-  if (currentQuestion === scoreRules.length) {
+  if (currentQuestion === global.numberRounds) {
     let matchingClub = "arsenal";
     Object.keys(scores).forEach((club) => {
       if (scores[club] > scores[matchingClub]) {

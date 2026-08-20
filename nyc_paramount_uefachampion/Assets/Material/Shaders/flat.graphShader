@@ -22,7 +22,9 @@ Nodes:
         SortIndex:
           Variable: 0
         Tooltip:
-          String: "Specifies the base color (albedo) of the material if the 'Base Textre' is disabled. \nMultiplied with the 'Base Texture' otherwise."
+          String: |-
+            Specifies the base color (albedo) of the material if the 'Base Textre' is disabled. 
+            Multiplied with the 'Base Texture' otherwise.
         UniqueID:
           String: Base Color
       PositionX: 1924
@@ -202,7 +204,9 @@ Nodes:
         Title:
           String: Offset
         Tooltip:
-          String: "Allows shifting of textures, or controls the speed of scrolling if animation is enabled. \nIf animation is enabled, the speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second."
+          String: |-
+            Allows shifting of textures, or controls the speed of scrolling if animation is enabled. 
+            If animation is enabled, the speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
       PositionX: 1052
       PositionY: 325
       TemplateID: nodes_inputs_parameters_float
@@ -232,7 +236,9 @@ Nodes:
         Static:
           Variable: true
         Tooltip:
-          String: "If this is enabled, the UV's will scroll. In this case the Offset specifies the speed of scrolling. \nThe speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second."
+          String: |-
+            If this is enabled, the UV's will scroll. In this case the Offset specifies the speed of scrolling. 
+            The speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
         UniqueID:
           String: Animation
       PositionX: 1053
@@ -1279,7 +1285,10 @@ Nodes:
         Static:
           Variable: true
         Tooltip:
-          String: "Normally, the Base Texture's alpha is taken as opacity. Enabling this allows you to define a separate greyscale opacity texture. \nThe 'Opacity Texture' value will be multiplied with the Base Texture's alpha (which is 1 for textures without alpha) and 'Opacity Multiplier' to get the final opacity. \n'Opacity Texture' is only available if 'Blend Mode' is not 'Disabled'."
+          String: |-
+            Normally, the Base Texture's alpha is taken as opacity. Enabling this allows you to define a separate greyscale opacity texture. 
+            The 'Opacity Texture' value will be multiplied with the Base Texture's alpha (which is 1 for textures without alpha) and 'Opacity Multiplier' to get the final opacity. 
+            'Opacity Texture' is only available if 'Blend Mode' is not 'Disabled'.
         UniqueID:
           String: Opacity Texture
       PositionX: 2401
@@ -2023,6 +2032,77 @@ Nodes:
       Title1: Opacity
     Node22:
       DependencyIndex: 81
+      LevelID: 32
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Channels:
+          ItemIndex: 5
+          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
+        Default:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        EnableMax:
+          Variable: true
+        EnableMin:
+          Variable: true
+        Group:
+          String: ""
+        Max:
+          Variable: 1.0
+        Min:
+          Variable: 0.0
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        ScriptName:
+          String: alphaRatio
+        SortIndex:
+          Variable: 0
+        Step:
+          Variable: 0.009999999776482582
+        Title:
+          String: AlphaRatio
+        Tooltip:
+          String: ""
+      PositionX: 3187
+      PositionY: -41
+      TemplateID: nodes_inputs_parameters_float
+      Title1: Float Parameter
+      Title2: AlphaRatio
+    Node23:
+      DependencyIndex: 82
+      LevelID: 33
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Input0:
+          Connection0:
+            NodeLevelID: 39
+            PortID: SubGraphUniqueID158
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Input1:
+          Connection0:
+            NodeLevelID: 32
+            PortID: Output
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Inputs:
+          ItemIndex: 0
+          ItemList: "2 : 3 : 4 : 5 : 6"
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        Type0:
+          ItemIndex: 0
+          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
+        Type1:
+          ItemIndex: 0
+          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
+      PositionX: 3181
+      PositionY: -276
+      TemplateID: nodes_math_multiply
+      Title1: Multiply
+    Node24:
+      DependencyIndex: 83
       LevelID: 1
       NodeCount: 0
       NodeType: 1
@@ -2051,8 +2131,8 @@ Nodes:
           Variable: [0.0, 0.0, 0.0, 0.0]
         Value2:
           Connection0:
-            NodeLevelID: 39
-            PortID: SubGraphUniqueID158
+            NodeLevelID: 33
+            PortID: Output
           Variable: [0.0, 0.0, 0.0, 0.0]
         Value3:
           Variable: [0.0, 0.0, 0.0, 0.0]
@@ -2062,11 +2142,11 @@ Nodes:
       PositionY: -645
       TemplateID: node_channels_combine
       Title1: Construct Vector
-    Node22CheckValue: false
-    Node23:
+    Node24CheckValue: false
+    Node25:
       CommentSizeX: 0
       CommentSizeY: 0
-      DependencyIndex: 82
+      DependencyIndex: 84
       LevelID: 4
       NodeCount: 0
       NodeType: 1
@@ -2131,10 +2211,10 @@ Nodes:
       TemplateID: nodes_main_graph
       Title1: Shader
       Title2: 3D
-    Node24:
+    Node26:
       CommentSizeX: 652
       CommentSizeY: 1292
-      DependencyIndex: 83
+      DependencyIndex: 85
       LevelID: 147
       NodeCount: 0
       NodeType: 1
@@ -2158,10 +2238,10 @@ Nodes:
       PositionY: -714
       TemplateID: node_util_comment
       Title1: ""
-    Node25:
+    Node27:
       CommentSizeX: 747
       CommentSizeY: 641
-      DependencyIndex: 84
+      DependencyIndex: 86
       LevelID: 71
       NodeCount: 0
       NodeType: 1
@@ -2185,10 +2265,10 @@ Nodes:
       PositionY: -10
       TemplateID: node_util_comment
       Title1: ""
-    Node26:
+    Node28:
       CommentSizeX: 749
       CommentSizeY: 604
-      DependencyIndex: 85
+      DependencyIndex: 87
       LevelID: 368
       NodeCount: 0
       NodeType: 1
@@ -2386,7 +2466,9 @@ Nodes:
         Title:
           String: Offset
         Tooltip:
-          String: "Allows shifting of textures, or controls the speed of scrolling if animation is enabled. \nIf animation is enabled, the speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second."
+          String: |-
+            Allows shifting of textures, or controls the speed of scrolling if animation is enabled. 
+            If animation is enabled, the speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
       PositionX: 1040
       PositionY: -308
       TemplateID: nodes_inputs_parameters_float
@@ -2416,7 +2498,9 @@ Nodes:
         Static:
           Variable: true
         Tooltip:
-          String: "If this is enabled, the UV's will scroll. In this case the Offset specifies the speed of scrolling. \nThe speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second."
+          String: |-
+            If this is enabled, the UV's will scroll. In this case the Offset specifies the speed of scrolling. 
+            The speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
         UniqueID:
           String: Animation
       PositionX: 1040

@@ -43,6 +43,7 @@ let answerTextureList = [
 ];
 let answerArray = [];
 const numberRounds = script.numberRounds;
+global.numberRounds = script.numberRounds;
 
 //________Caller________//
 

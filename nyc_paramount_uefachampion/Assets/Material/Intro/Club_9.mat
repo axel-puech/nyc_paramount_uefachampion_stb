@@ -28,6 +28,12 @@
     - Port_GSplatScale_N004:
         typeIdx: 4
         value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_Input0_N033:
+        typeIdx: 1
+        value: 1.000000
+    - Port_Input1_N033:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     - Port_LODValue_N002:
         typeIdx: 1
         value: 0.000000
@@ -88,13 +94,16 @@
     PreviewEnabled:
       typeIdx: 0
       value: 0
+    alphaRatio:
+      typeIdx: 1
+      value: 1.000000
     baseColor:
       typeIdx: 5
       value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     baseTex:
       typeIdx: 9
       value:
-        id: 1abd0a09-e205-4d5b-acd0-accc912b9b8c
+        id: 6cb59c7b-40f9-42df-bc33-beb4e37f840d
         sampler:
           filteringMode: Trilinear
           wrapModeU: ClampToEdge
