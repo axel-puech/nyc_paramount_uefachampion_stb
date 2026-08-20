@@ -10,6 +10,8 @@ script.subScene.SetUpdate(Update);
 
 //__________________________Variables_____________________________//
 
+global.currentRound = null;
+
 var scores = {
   arsenal: 0,
   barcelona: 0,
@@ -53,6 +55,8 @@ const scoreRules = [
   { 0: ["liverpool"], 1: ["barcelona"], 2: ["manchesterCity", "realMadrid"] },
 ];
 //________Caller________//
+
+const gameEndCaller = script.subScene.CreateCaller("gameEndEvent");
 //________Listener________//
 
 const answerListener = script.subScene.CreateListener("AnswerEvent", OnAnswer);
@@ -60,7 +64,9 @@ const answerListener = script.subScene.CreateListener("AnswerEvent", OnAnswer);
 //________DelayEvent________//
 
 //_________________________Director_Functions_____________________//
-function Start() {}
+function Start() {
+  global.currentRound = 1;
+}
 function OnLateStart() {}
 function Update() {}
 
@@ -107,6 +113,7 @@ function OnAnswer(answerId) {
   // Une fois les 6 réponses reçues, l'outro affiche le club au meilleur score.
   if (currentQuestion === global.numberRounds) {
     let matchingClub = "arsenal";
+    gameEndCaller.Call();
     Object.keys(scores).forEach((club) => {
       if (scores[club] > scores[matchingClub]) {
         matchingClub = club;
