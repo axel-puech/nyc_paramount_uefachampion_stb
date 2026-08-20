@@ -3,37 +3,6 @@ Nodes:
   ChildNodes:
     Node0:
       DependencyIndex: 0
-      LevelID: 94
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        CustomSeed:
-          Variable: 0.0
-        Dimension:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : 4"
-        Max:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Min:
-          Variable: [-1.0, 0.0, 0.0, 0.0]
-        Random:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        SeedNodeID:
-          Variable: true
-        SeedParticleID:
-          Variable: true
-        SeedTime:
-          Variable: false
-        SeedUseCustom:
-          Variable: false
-      PositionX: -618
-      PositionY: 683
-      TemplateID: node_main_particle_random
-      TemplateVersionMajor: 2
-      Title1: Particle Random
-    Node1:
-      DependencyIndex: 1
       LevelID: 11
       NodeCount: 0
       NodeType: 1
@@ -48,66 +17,31 @@ Nodes:
       TemplateID: nodes_particle_emit_begin
       Title1: Emit Particle
       Title2: "Count: 6000"
+    Node1:
+      DependencyIndex: 1
+      LevelID: 13
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Frequency:
+          ItemIndex: 0
+          ItemList: "Per Second : Per Frame"
+        ParticleIn:
+          ClassType2: PARTICLE
+          Connection0:
+            NodeLevelID: 11
+            PortID: ParticleOut
+        ParticleOut:
+          ClassType2: PARTICLE
+          IOType: 1
+        SpawnRate:
+          Variable: 125.0
+      PositionX: -163
+      PositionY: -397
+      TemplateID: node_main_particle_spawn_continuous
+      Title1: Spawn Continuous
     Node10:
-      DependencyIndex: 34
-      LevelID: 20
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Channels:
-          ItemIndex: 0
-          ItemList: "rgba : rgb"
-        Default:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Group:
-          String: ""
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        ScriptName:
-          String: colorA
-        SortIndex:
-          Variable: 0
-        Tooltip:
-          String: ""
-        UniqueID:
-          String: Color A
-      PositionX: -963
-      PositionY: -50
-      TemplateID: nodes_inputs_parameters_color
-      Title1: Color Parameter
-      Title2: Color A
-    Node11:
-      DependencyIndex: 35
-      LevelID: 96
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Channels:
-          ItemIndex: 0
-          ItemList: "rgba : rgb"
-        Default:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Group:
-          String: ""
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        ScriptName:
-          String: colorB
-        SortIndex:
-          Variable: 0
-        Tooltip:
-          String: ""
-        UniqueID:
-          String: Color B
-      PositionX: -974
-      PositionY: 46
-      TemplateID: nodes_inputs_parameters_color
-      Title1: Color Parameter
-      Title2: Color B
-    Node12:
-      DependencyIndex: 36
+      DependencyIndex: 25
       LevelID: 97
       NodeCount: 0
       NodeType: 1
@@ -135,8 +69,8 @@ Nodes:
       TemplateID: nodes_inputs_parameters_color
       Title1: Color Parameter
       Title2: Color C
-    Node13:
-      DependencyIndex: 37
+    Node11:
+      DependencyIndex: 26
       LevelID: 18
       NodeCount: 0
       NodeType: 1
@@ -185,8 +119,8 @@ Nodes:
       PositionY: -117
       TemplateID: nodes_main_switch
       Title1: Switch
-    Node14:
-      DependencyIndex: 38
+    Node12:
+      DependencyIndex: 27
       LevelID: 16
       NodeCount: 0
       NodeType: 1
@@ -237,13 +171,13 @@ Nodes:
           ClassType1: MATRIX
           Variable: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
       PositionX: -154
-      PositionY: 77
+      PositionY: 0
       TemplateID: node_main_particle_set_force
       Title1: Modify Attribute ( Set Color )
-    Node14CheckEnabled: true
-    Node14CheckExists: true
-    Node15:
-      DependencyIndex: 39
+    Node12CheckEnabled: true
+    Node12CheckExists: true
+    Node13:
+      DependencyIndex: 28
       LevelID: 101
       NodeCount: 0
       NodeType: 1
@@ -281,8 +215,8 @@ Nodes:
       TemplateID: nodes_inputs_parameters_float
       Title1: Float Parameter
       Title2: KillParts
-    Node16:
-      DependencyIndex: 40
+    Node14:
+      DependencyIndex: 29
       LevelID: 100
       NodeCount: 0
       NodeType: 1
@@ -301,13 +235,13 @@ Nodes:
           ClassType2: PARTICLE
           IOType: 1
       PositionX: -154
-      PositionY: 136
+      PositionY: 59
       TemplateID: node_main_particle_kill
       Title1: Kill Particle
-    Node16CheckEnabled: true
-    Node16CheckExists: true
-    Node17:
-      DependencyIndex: 41
+    Node14CheckEnabled: true
+    Node14CheckExists: true
+    Node15:
+      DependencyIndex: 30
       LevelID: 6
       NodeCount: 0
       NodeType: 1
@@ -341,8 +275,8 @@ Nodes:
       PositionY: 233
       TemplateID: node_channels_combine
       Title1: Construct Vector
-    Node18:
-      DependencyIndex: 42
+    Node16:
+      DependencyIndex: 31
       LevelID: 111
       NodeCount: 0
       NodeType: 1
@@ -372,10 +306,10 @@ Nodes:
       TemplateID: node_main_particle_random
       TemplateVersionMajor: 2
       Title1: Particle Random
-    Node19:
+    Node17:
       ChildNodes:
         Node0:
-          DependencyIndex: 43
+          DependencyIndex: 32
           LevelID: 103
           NodeCount: 0
           NodeType: 1
@@ -395,7 +329,7 @@ Nodes:
           Title1: Particle ( Behavior )
         Node0CheckValue: false
         Node1:
-          DependencyIndex: 44
+          DependencyIndex: 33
           LevelID: 104
           NodeCount: 0
           NodeType: 1
@@ -433,7 +367,7 @@ Nodes:
           Title2: Direction
         Node1CheckValue: false
         Node2:
-          DependencyIndex: 45
+          DependencyIndex: 34
           LevelID: 105
           NodeCount: 0
           NodeType: 1
@@ -455,7 +389,7 @@ Nodes:
           Title1: Normalize
         Node2CheckValue: false
         Node3:
-          DependencyIndex: 46
+          DependencyIndex: 35
           LevelID: 106
           NodeCount: 0
           NodeType: 1
@@ -493,7 +427,7 @@ Nodes:
           Title2: Strength
         Node3CheckValue: false
         Node4:
-          DependencyIndex: 47
+          DependencyIndex: 36
           LevelID: 107
           NodeCount: 0
           NodeType: 1
@@ -526,7 +460,7 @@ Nodes:
           Title1: Multiply
         Node4CheckValue: false
         Node5:
-          DependencyIndex: 48
+          DependencyIndex: 37
           LevelID: 108
           NodeCount: 0
           NodeType: 1
@@ -583,7 +517,7 @@ Nodes:
         Node5CheckEnabled: true
         Node5CheckExists: true
         Node6:
-          DependencyIndex: 49
+          DependencyIndex: 38
           LevelID: 109
           NodeCount: 0
           NodeType: 1
@@ -601,7 +535,7 @@ Nodes:
           TemplateID: nodes_export_particle
           Title1: ""
         Node6CheckValue: false
-      DependencyIndex: 50
+      DependencyIndex: 39
       LevelID: 102
       NodeType: 3
       Ports:
@@ -633,36 +567,13 @@ Nodes:
         Title1:
           String: Add Force ( Directional )
       PositionX: -154
-      PositionY: 195
+      PositionY: 118
       TemplateID: nodes_main_container_subgraph
       Title1: Add Force ( Directional )
-    Node19CheckEnabled: true
-    Node19CheckExists: true
-    Node2:
-      DependencyIndex: 2
-      LevelID: 13
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Frequency:
-          ItemIndex: 0
-          ItemList: "Per Second : Per Frame"
-        ParticleIn:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 11
-            PortID: ParticleOut
-        ParticleOut:
-          ClassType2: PARTICLE
-          IOType: 1
-        SpawnRate:
-          Variable: 125.0
-      PositionX: -163
-      PositionY: -397
-      TemplateID: node_main_particle_spawn_continuous
-      Title1: Spawn Continuous
-    Node20:
-      DependencyIndex: 51
+    Node17CheckEnabled: true
+    Node17CheckExists: true
+    Node18:
+      DependencyIndex: 40
       LevelID: 25
       NodeCount: 0
       NodeType: 1
@@ -676,12 +587,12 @@ Nodes:
           ClassType2: PARTICLE
           IOType: 1
       PositionX: -154
-      PositionY: 272
+      PositionY: 195
       TemplateID: nodes_particle_spawn_end
       Title1: Particle ( Spawn End )
-    Node20CheckValue: false
-    Node21:
-      DependencyIndex: 52
+    Node18CheckValue: false
+    Node19:
+      DependencyIndex: 41
       LevelID: 85
       NodeCount: 0
       NodeType: 1
@@ -704,10 +615,30 @@ Nodes:
       TemplateID: nodes_particle_update_begin
       Title1: Update Particle
       Title2: Local Space
-    Node22:
+    Node1CheckEnabled: true
+    Node1CheckExists: true
+    Node2:
+      DependencyIndex: 2
+      LevelID: 12
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        ParticleIn:
+          ClassType2: PARTICLE
+          Connection0:
+            NodeLevelID: 13
+            PortID: ParticleOut
+        ParticleOut:
+          ClassType2: PARTICLE
+          IOType: 1
+      PositionX: -163
+      PositionY: -338
+      TemplateID: nodes_particle_emit_end
+      Title1: Particle ( Emit End )
+    Node20:
       ChildNodes:
         Node0:
-          DependencyIndex: 53
+          DependencyIndex: 42
           LevelID: 3
           NodeCount: 0
           NodeType: 1
@@ -727,7 +658,7 @@ Nodes:
           Title1: Particle ( Behavior )
         Node0CheckValue: false
         Node1:
-          DependencyIndex: 54
+          DependencyIndex: 43
           LevelID: 4
           NodeCount: 0
           NodeType: 1
@@ -764,7 +695,7 @@ Nodes:
           Title1: Float Import
           Title2: Alpha Min
         Node2:
-          DependencyIndex: 55
+          DependencyIndex: 44
           LevelID: 17
           NodeCount: 0
           NodeType: 1
@@ -801,7 +732,7 @@ Nodes:
           Title1: Float Import
           Title2: Alpha Max
         Node3:
-          DependencyIndex: 56
+          DependencyIndex: 45
           LevelID: 185
           NodeCount: 0
           NodeType: 1
@@ -838,7 +769,7 @@ Nodes:
           Title1: Float Import
           Title2: Fade In Time
         Node4:
-          DependencyIndex: 57
+          DependencyIndex: 46
           LevelID: 188
           NodeCount: 0
           NodeType: 1
@@ -875,7 +806,7 @@ Nodes:
           Title1: Float Import
           Title2: Fade Out Time
         Node5:
-          DependencyIndex: 58
+          DependencyIndex: 47
           LevelID: 73
           NodeCount: 0
           NodeType: 1
@@ -965,7 +896,7 @@ Nodes:
         Node5CheckEnabled: true
         Node5CheckExists: true
         Node6:
-          DependencyIndex: 59
+          DependencyIndex: 48
           LevelID: 72
           NodeCount: 0
           NodeType: 1
@@ -983,7 +914,7 @@ Nodes:
           TemplateID: nodes_export_particle
           Title1: ""
         Node6CheckValue: false
-      DependencyIndex: 60
+      DependencyIndex: 49
       LevelID: 2
       NodeType: 3
       Ports:
@@ -1019,222 +950,10 @@ Nodes:
       PositionY: 546
       TemplateID: nodes_main_container_subgraph
       Title1: Set Alpha ( Fade In/Out )
-    Node22CheckEnabled: true
-    Node22CheckExists: true
-    Node23:
-      ChildNodes:
-        Node0:
-          DependencyIndex: 61
-          LevelID: 8
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Import:
-              ClassType2: PARTICLE
-            Title:
-              String: Particle
-            Tooltip:
-              String: ""
-            Value:
-              ClassType2: PARTICLE
-              IOType: 1
-          PositionX: -143
-          PositionY: 695
-          TemplateID: nodes_import_particle
-          Title1: Particle ( Behavior )
-        Node1:
-          DependencyIndex: 62
-          LevelID: 9
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Channels:
-              ItemIndex: 3
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-            EnableMax:
-              Variable: false
-            EnableMin:
-              Variable: false
-            Group:
-              String: ""
-            Import:
-              Variable: [0.0, -980.0, 0.0, 0.0]
-            Max:
-              Variable: 1.0
-            Min:
-              Variable: -1.0
-            SortIndex:
-              Variable: 0
-            Step:
-              Variable: 0.009999999776482582
-            Title:
-              String: Gravity Force ( cm/s )
-            Tooltip:
-              String: ""
-            Value:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-          PositionX: -415
-          PositionY: 662
-          TemplateID: nodes_import_float
-          Title1: Float Import
-          Title2: Gravity Force ( cm/s )
-        Node2:
-          DependencyIndex: 63
-          LevelID: 10
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Channels:
-              ItemIndex: 6
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-            EnableMax:
-              Variable: false
-            EnableMin:
-              Variable: false
-            Group:
-              String: ""
-            Import:
-              Variable: [0.014999999664723873, 0.0, 0.0, 0.0]
-            Max:
-              Variable: 1.0
-            Min:
-              Variable: 0.0
-            SortIndex:
-              Variable: 1
-            Step:
-              Variable: 0.009999999776482582
-            Title:
-              String: Scale
-            Tooltip:
-              String: ""
-            Value:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-          PositionX: -364
-          PositionY: 771
-          TemplateID: nodes_import_float
-          Title1: Float Import
-          Title2: Scale
-        Node3:
-          DependencyIndex: 64
-          LevelID: 24
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Code:
-              ClassType1: TEXT
-              String: |-
-                input_vec3  GravityForce;
-                input_float  Scale;
-                
-                void main()
-                {
-                	vec3 gravity = GravityForce * Scale * system.getParticleMass();
-                	system.setParticleForce( gravity + system.getParticleForce() );
-                }
-            CustomCodeNodeAsset:
-              ClassType1: REFUID
-              String: ""
-            Description:
-              ClassType1: TEXT
-              String: ""
-            Examples:
-              ItemIndex: 0
-              ItemList: "Custom : System Built-In Values/Functions"
-            GravityForce:
-              Connection0:
-                NodeLevelID: 9
-                PortID: Value
-              Variable: [0.0, 0.0, 0.0]
-            ID:
-              Variable: 24
-            Locked:
-              Variable: false
-            ParticleIn:
-              ClassType2: PARTICLE
-              Connection0:
-                NodeLevelID: 8
-                PortID: Value
-            ParticleOut:
-              ClassType2: PARTICLE
-              IOType: 1
-            Scale:
-              Connection0:
-                NodeLevelID: 10
-                PortID: Value
-              Variable: 0.0
-            Stage:
-              ItemIndex: 1
-              ItemList: "Vertex : Pixel"
-            Title:
-              String: Gravity
-            UseExternalFile:
-              Variable: false
-            ngs_Height:
-              Variable: 400
-            ngs_Version:
-              String: 0.1.0
-          PositionX: -133
-          PositionY: 750
-          TemplateID: node_util_custom_container_update
-          Title1: Gravity
-        Node3CheckEnabled: true
-        Node3CheckExists: true
-        Node4:
-          DependencyIndex: 65
-          LevelID: 26
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Export:
-              ClassType2: PARTICLE
-              IOType: 1
-            Value:
-              ClassType2: PARTICLE
-              Connection0:
-                NodeLevelID: 24
-                PortID: ParticleOut
-          PositionX: -133
-          PositionY: 827
-          TemplateID: nodes_export_particle
-          Title1: ""
-      DependencyIndex: 66
-      LevelID: 7
-      NodeType: 3
-      Ports:
-        Description:
-          String: ""
-        DescriptionText:
-          ClassType1: TEXT
-          String: |-
-            Adds a gravitational force, the input Gravity Force value is measured in cm/s.
-            Scale is a multiplier for this force.
-        Locked:
-          Variable: false
-        SubGraphUniqueID10:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        SubGraphUniqueID26:
-          ClassType2: PARTICLE
-          IOType: 1
-        SubGraphUniqueID8:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 2
-            PortID: SubGraphUniqueID72
-        SubGraphUniqueID9:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Title1:
-          String: Add Force ( Gravity )
-      PositionX: -146
-      PositionY: 659
-      TemplateID: nodes_main_container_subgraph
-      Title1: Add Force ( Gravity )
-    Node23CheckEnabled: true
-    Node23CheckExists: true
-    Node23CheckValue: false
-    Node24:
-      DependencyIndex: 67
+    Node20CheckEnabled: true
+    Node20CheckExists: true
+    Node21:
+      DependencyIndex: 50
       LevelID: 95
       NodeCount: 0
       NodeType: 1
@@ -1264,8 +983,8 @@ Nodes:
       TemplateID: node_main_particle_random
       TemplateVersionMajor: 2
       Title1: Particle Random
-    Node25:
-      DependencyIndex: 68
+    Node22:
+      DependencyIndex: 51
       LevelID: 93
       NodeCount: 0
       NodeType: 1
@@ -1302,10 +1021,10 @@ Nodes:
       PositionY: 687
       TemplateID: node_channels_combine
       Title1: Construct Vector
-    Node26:
+    Node23:
       ChildNodes:
         Node0:
-          DependencyIndex: 69
+          DependencyIndex: 52
           LevelID: 146
           NodeCount: 0
           NodeType: 1
@@ -1324,7 +1043,7 @@ Nodes:
           TemplateID: nodes_import_particle
           Title1: Particle ( Behavior )
         Node1:
-          DependencyIndex: 70
+          DependencyIndex: 53
           LevelID: 156
           NodeCount: 0
           NodeType: 1
@@ -1348,7 +1067,7 @@ Nodes:
           Title1: "Particle ( Get Attribute ) "
           Title2: Matrix
         Node10:
-          DependencyIndex: 79
+          DependencyIndex: 62
           LevelID: 169
           NodeCount: 0
           NodeType: 1
@@ -1366,7 +1085,7 @@ Nodes:
           TemplateID: nodes_export_particle
           Title1: ""
         Node2:
-          DependencyIndex: 71
+          DependencyIndex: 54
           LevelID: 161
           NodeCount: 0
           NodeType: 1
@@ -1403,7 +1122,7 @@ Nodes:
           Title1: Float Import
           Title2: Rotation Axis
         Node3:
-          DependencyIndex: 72
+          DependencyIndex: 55
           LevelID: 162
           NodeCount: 0
           NodeType: 1
@@ -1424,7 +1143,7 @@ Nodes:
           TemplateID: nodes_math_normalize
           Title1: Normalize
         Node4:
-          DependencyIndex: 73
+          DependencyIndex: 56
           LevelID: 163
           NodeCount: 0
           NodeType: 1
@@ -1461,7 +1180,7 @@ Nodes:
           Title1: Float Import
           Title2: Angle (Degrees)
         Node5:
-          DependencyIndex: 74
+          DependencyIndex: 57
           LevelID: 90
           NodeCount: 0
           NodeType: 1
@@ -1476,7 +1195,7 @@ Nodes:
           TemplateID: node_effect_global_time_delta
           Title1: Delta Time
         Node6:
-          DependencyIndex: 75
+          DependencyIndex: 58
           LevelID: 92
           NodeCount: 0
           NodeType: 1
@@ -1508,7 +1227,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node7:
-          DependencyIndex: 76
+          DependencyIndex: 59
           LevelID: 164
           NodeCount: 0
           NodeType: 1
@@ -1548,7 +1267,7 @@ Nodes:
           TemplateID: node_construct_matrix
           Title1: Construct Matrix
         Node8:
-          DependencyIndex: 77
+          DependencyIndex: 60
           LevelID: 165
           NodeCount: 0
           NodeType: 1
@@ -1586,7 +1305,7 @@ Nodes:
           TemplateID: nodes_math_matrix_transform
           Title1: Transform by Matrix
         Node9:
-          DependencyIndex: 78
+          DependencyIndex: 61
           LevelID: 168
           NodeCount: 0
           NodeType: 1
@@ -1642,7 +1361,7 @@ Nodes:
           Title1: Modify Attribute ( Set Matrix )
         Node9CheckEnabled: true
         Node9CheckExists: true
-      DependencyIndex: 80
+      DependencyIndex: 63
       LevelID: 27
       NodeType: 3
       Ports:
@@ -1656,8 +1375,8 @@ Nodes:
         SubGraphUniqueID146:
           ClassType2: PARTICLE
           Connection0:
-            NodeLevelID: 7
-            PortID: SubGraphUniqueID26
+            NodeLevelID: 2
+            PortID: SubGraphUniqueID72
         SubGraphUniqueID161:
           Connection0:
             NodeLevelID: 93
@@ -1671,13 +1390,13 @@ Nodes:
         Title1:
           String: Set Matrix ( Rotate on Axis )
       PositionX: -146
-      PositionY: 736
+      PositionY: 659
       TemplateID: nodes_main_container_subgraph
       Title1: Set Matrix ( Rotate on Axis )
-    Node26CheckEnabled: true
-    Node26CheckExists: true
-    Node27:
-      DependencyIndex: 81
+    Node23CheckEnabled: true
+    Node23CheckExists: true
+    Node24:
+      DependencyIndex: 64
       LevelID: 37
       NodeCount: 0
       NodeType: 1
@@ -1707,8 +1426,8 @@ Nodes:
       TemplateID: node_main_particle_random
       TemplateVersionMajor: 2
       Title1: Particle Random
-    Node28:
-      DependencyIndex: 82
+    Node25:
+      DependencyIndex: 65
       LevelID: 38
       NodeCount: 0
       NodeType: 1
@@ -1746,8 +1465,8 @@ Nodes:
       TemplateID: nodes_inputs_parameters_float
       Title1: Float Parameter
       Title2: SpawnAmount
-    Node29:
-      DependencyIndex: 83
+    Node26:
+      DependencyIndex: 66
       LevelID: 41
       NodeCount: 0
       NodeType: 1
@@ -1775,28 +1494,8 @@ Nodes:
       PositionY: 951
       TemplateID: nodes_math_larger
       Title1: Is Greater
-    Node2CheckEnabled: true
-    Node2CheckExists: true
-    Node3:
-      DependencyIndex: 3
-      LevelID: 12
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        ParticleIn:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 13
-            PortID: ParticleOut
-        ParticleOut:
-          ClassType2: PARTICLE
-          IOType: 1
-      PositionX: -163
-      PositionY: -338
-      TemplateID: nodes_particle_emit_end
-      Title1: Particle ( Emit End )
-    Node30:
-      DependencyIndex: 84
+    Node27:
+      DependencyIndex: 67
       LevelID: 36
       NodeCount: 0
       NodeType: 1
@@ -1815,13 +1514,13 @@ Nodes:
           ClassType2: PARTICLE
           IOType: 1
       PositionX: -146
-      PositionY: 813
+      PositionY: 736
       TemplateID: node_main_particle_kill
       Title1: Kill Particle
-    Node30CheckEnabled: true
-    Node30CheckExists: true
-    Node31:
-      DependencyIndex: 85
+    Node27CheckEnabled: true
+    Node27CheckExists: true
+    Node28:
+      DependencyIndex: 68
       LevelID: 113
       NodeCount: 0
       NodeType: 1
@@ -1851,8 +1550,8 @@ Nodes:
       TemplateID: node_main_particle_random
       TemplateVersionMajor: 2
       Title1: Particle Random
-    Node32:
-      DependencyIndex: 86
+    Node29:
+      DependencyIndex: 69
       LevelID: 98
       NodeCount: 0
       NodeType: 1
@@ -1889,10 +1588,82 @@ Nodes:
       PositionY: 1006
       TemplateID: node_channels_combine
       Title1: Construct Vector
-    Node33:
+    Node3:
+      DependencyIndex: 3
+      LevelID: 61
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Burst:
+          Variable: 1.0
+        Custom Value:
+          Variable: 0.03333330154418945
+        Delay:
+          Variable: 0.0
+        Fixed Delta Time:
+          ItemIndex: 1
+          ItemList: "1/15 : 1/30 : 1/60 : 1/120 : Custom"
+        LifeSpan:
+          ItemIndex: 0
+          ItemList: "Live Forever : Max Life"
+        MaxLife:
+          Variable: 5.0
+        Maxparticles:
+          Variable: 2000
+        Particle:
+          ClassType2: PARTICLE
+          IOType: 1
+        ParticleIn:
+          ClassType2: PARTICLE
+          Connection0:
+            NodeLevelID: 12
+            PortID: ParticleOut
+        PauseWhenNotVisible:
+          Variable: false
+        Play Rate:
+          Variable: 1.0
+        PositionMax:
+          Variable: [1000.0, 1000.0, 1000.0]
+        PositionMaxScalar:
+          Variable: 1000.0
+        PositionMin:
+          Variable: [-1000.0, -1000.0, -1000.0]
+        PositionMinScalar:
+          Variable: -1000.0
+        PositionPerAxis:
+          Variable: false
+        SizeInheritsParentScale:
+          Variable: false
+        Space:
+          ItemIndex: 1
+          ItemList: "World : Local"
+        SpawnAmount:
+          Variable: 2000
+        SpawnMode:
+          ItemIndex: 0
+          ItemList: "Continuous : Burst : Once"
+        SpawnRate:
+          Variable: 400.0
+        Use Fixed Delta Time:
+          Variable: false
+        Warmup:
+          Variable: false
+        WarmupDt:
+          String: "0.0333333"
+        WarmupFPS:
+          Variable: 30.0
+        WarmupSteps:
+          Variable: 30
+        WarmupTime:
+          Variable: 1.0
+      PositionX: -164
+      PositionY: -286
+      TemplateID: nodes_particle_spawn_begin
+      Title1: Initialize Particle
+    Node30:
       ChildNodes:
         Node0:
-          DependencyIndex: 87
+          DependencyIndex: 70
           LevelID: 192
           NodeCount: 0
           NodeType: 1
@@ -1911,7 +1682,7 @@ Nodes:
           TemplateID: nodes_import_particle
           Title1: Particle ( Behavior )
         Node1:
-          DependencyIndex: 88
+          DependencyIndex: 71
           LevelID: 193
           NodeCount: 0
           NodeType: 1
@@ -1948,7 +1719,7 @@ Nodes:
           Title1: Float Import
           Title2: Strength
         Node10:
-          DependencyIndex: 97
+          DependencyIndex: 80
           LevelID: 202
           NodeCount: 0
           NodeType: 1
@@ -1977,7 +1748,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node11:
-          DependencyIndex: 98
+          DependencyIndex: 81
           LevelID: 203
           NodeCount: 0
           NodeType: 1
@@ -1998,7 +1769,7 @@ Nodes:
           TemplateID: nodes_math_subtract_one
           Title1: Subtract One
         Node12:
-          DependencyIndex: 99
+          DependencyIndex: 82
           LevelID: 204
           NodeCount: 0
           NodeType: 1
@@ -2030,7 +1801,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node13:
-          DependencyIndex: 100
+          DependencyIndex: 83
           LevelID: 205
           NodeCount: 0
           NodeType: 1
@@ -2087,7 +1858,7 @@ Nodes:
         Node13CheckEnabled: true
         Node13CheckExists: true
         Node14:
-          DependencyIndex: 101
+          DependencyIndex: 84
           LevelID: 206
           NodeCount: 0
           NodeType: 1
@@ -2106,7 +1877,7 @@ Nodes:
           Title1: ""
         Node14CheckValue: false
         Node2:
-          DependencyIndex: 89
+          DependencyIndex: 72
           LevelID: 43
           NodeCount: 0
           NodeType: 1
@@ -2143,7 +1914,7 @@ Nodes:
           Title1: Float Import
           Title2: Scale
         Node3:
-          DependencyIndex: 90
+          DependencyIndex: 73
           LevelID: 195
           NodeCount: 0
           NodeType: 1
@@ -2180,7 +1951,7 @@ Nodes:
           Title1: Float Import
           Title2: Offset
         Node4:
-          DependencyIndex: 91
+          DependencyIndex: 74
           LevelID: 196
           NodeCount: 0
           NodeType: 1
@@ -2217,7 +1988,7 @@ Nodes:
           Title1: Float Import
           Title2: Animate
         Node5:
-          DependencyIndex: 92
+          DependencyIndex: 75
           LevelID: 197
           NodeCount: 0
           NodeType: 1
@@ -2297,7 +2068,7 @@ Nodes:
           TemplateVersionMinor: 2
           Title1: Get Triplanar Coords
         Node6:
-          DependencyIndex: 93
+          DependencyIndex: 76
           LevelID: 198
           NodeCount: 0
           NodeType: 1
@@ -2319,7 +2090,7 @@ Nodes:
           Title2: 2D
         Node6CheckValue: false
         Node7:
-          DependencyIndex: 94
+          DependencyIndex: 77
           LevelID: 199
           NodeCount: 0
           NodeType: 1
@@ -2341,7 +2112,7 @@ Nodes:
           Title2: 2D
         Node7CheckValue: false
         Node8:
-          DependencyIndex: 95
+          DependencyIndex: 78
           LevelID: 200
           NodeCount: 0
           NodeType: 1
@@ -2363,7 +2134,7 @@ Nodes:
           Title2: 2D
         Node8CheckValue: false
         Node9:
-          DependencyIndex: 96
+          DependencyIndex: 79
           LevelID: 201
           NodeCount: 0
           NodeType: 1
@@ -2407,7 +2178,7 @@ Nodes:
           TemplateID: node_channels_combine
           Title1: Construct Vector
         Node9CheckValue: false
-      DependencyIndex: 102
+      DependencyIndex: 85
       LevelID: 42
       NodeType: 3
       Ports:
@@ -2443,13 +2214,13 @@ Nodes:
         Title1:
           String: Add Force ( Simplex Noise )
       PositionX: -146
-      PositionY: 872
+      PositionY: 795
       TemplateID: nodes_main_container_subgraph
       Title1: Add Force ( Simplex Noise )
-    Node33CheckEnabled: true
-    Node33CheckExists: true
-    Node34:
-      DependencyIndex: 103
+    Node30CheckEnabled: true
+    Node30CheckExists: true
+    Node31:
+      DependencyIndex: 86
       LevelID: 15
       NodeCount: 0
       NodeType: 1
@@ -2463,12 +2234,12 @@ Nodes:
           ClassType2: PARTICLE
           IOType: 1
       PositionX: -146
-      PositionY: 985
+      PositionY: 908
       TemplateID: nodes_particle_update_end
       Title1: Particle Update ( End )
-    Node34CheckValue: false
-    Node35:
-      DependencyIndex: 104
+    Node31CheckValue: false
+    Node32:
+      DependencyIndex: 87
       LevelID: 39
       NodeCount: 0
       NodeType: 1
@@ -2554,10 +2325,10 @@ Nodes:
       PositionY: 1360
       TemplateID: nodes_particle_output_begin
       Title1: Output Quad ( World Space )
-    Node35CheckEnabled: true
-    Node35CheckExists: true
-    Node36:
-      DependencyIndex: 105
+    Node32CheckEnabled: true
+    Node32CheckExists: true
+    Node33:
+      DependencyIndex: 88
       LevelID: 22
       NodeCount: 0
       NodeType: 1
@@ -2596,10 +2367,10 @@ Nodes:
       PositionY: 1415
       TemplateID: node_main_particle_align_to_camera
       Title1: Align to Camera (Quad)
-    Node36CheckEnabled: true
-    Node36CheckExists: true
-    Node37:
-      DependencyIndex: 106
+    Node33CheckEnabled: true
+    Node33CheckExists: true
+    Node34:
+      DependencyIndex: 89
       LevelID: 23
       NodeCount: 0
       NodeType: 1
@@ -2622,8 +2393,8 @@ Nodes:
       TemplateID: node_main_particle_force
       Title1: "Particle ( Get Attribute ) "
       Title2: Color
-    Node38:
-      DependencyIndex: 108
+    Node35:
+      DependencyIndex: 91
       LevelID: 1
       NodeCount: 0
       NodeType: 1
@@ -2653,8 +2424,8 @@ Nodes:
       TemplateID: node_main_particle_random
       TemplateVersionMajor: 2
       Title1: Particle Random
-    Node39:
-      DependencyIndex: 109
+    Node36:
+      DependencyIndex: 92
       LevelID: 5
       NodeCount: 0
       NodeType: 1
@@ -2691,82 +2462,10 @@ Nodes:
       PositionY: 1647
       TemplateID: node_channels_combine
       Title1: Construct Vector
-    Node4:
-      DependencyIndex: 4
-      LevelID: 61
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Burst:
-          Variable: 1.0
-        Custom Value:
-          Variable: 0.03333330154418945
-        Delay:
-          Variable: 0.0
-        Fixed Delta Time:
-          ItemIndex: 1
-          ItemList: "1/15 : 1/30 : 1/60 : 1/120 : Custom"
-        LifeSpan:
-          ItemIndex: 0
-          ItemList: "Live Forever : Max Life"
-        MaxLife:
-          Variable: 5.0
-        Maxparticles:
-          Variable: 2000
-        Particle:
-          ClassType2: PARTICLE
-          IOType: 1
-        ParticleIn:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 12
-            PortID: ParticleOut
-        PauseWhenNotVisible:
-          Variable: false
-        Play Rate:
-          Variable: 1.0
-        PositionMax:
-          Variable: [1000.0, 1000.0, 1000.0]
-        PositionMaxScalar:
-          Variable: 1000.0
-        PositionMin:
-          Variable: [-1000.0, -1000.0, -1000.0]
-        PositionMinScalar:
-          Variable: -1000.0
-        PositionPerAxis:
-          Variable: false
-        SizeInheritsParentScale:
-          Variable: false
-        Space:
-          ItemIndex: 1
-          ItemList: "World : Local"
-        SpawnAmount:
-          Variable: 2000
-        SpawnMode:
-          ItemIndex: 0
-          ItemList: "Continuous : Burst : Once"
-        SpawnRate:
-          Variable: 400.0
-        Use Fixed Delta Time:
-          Variable: false
-        Warmup:
-          Variable: false
-        WarmupDt:
-          String: "0.0333333"
-        WarmupFPS:
-          Variable: 30.0
-        WarmupSteps:
-          Variable: 30
-        WarmupTime:
-          Variable: 1.0
-      PositionX: -164
-      PositionY: -286
-      TemplateID: nodes_particle_spawn_begin
-      Title1: Initialize Particle
-    Node40:
+    Node37:
       ChildNodes:
         Node0:
-          DependencyIndex: 107
+          DependencyIndex: 90
           LevelID: 32
           NodeCount: 0
           NodeType: 1
@@ -2781,7 +2480,7 @@ Nodes:
           TemplateID: node_effect_global_surface_uvcoord0
           Title1: Surface UV Coord
         Node1:
-          DependencyIndex: 110
+          DependencyIndex: 93
           LevelID: 91
           NodeCount: 0
           NodeType: 1
@@ -2818,7 +2517,7 @@ Nodes:
           Title1: Float Import
           Title2: Scale
         Node10:
-          DependencyIndex: 119
+          DependencyIndex: 102
           LevelID: 65
           NodeCount: 0
           NodeType: 1
@@ -2834,7 +2533,7 @@ Nodes:
           TemplateID: nodes_inputs_constants_pi
           Title1: PI
         Node11:
-          DependencyIndex: 120
+          DependencyIndex: 103
           LevelID: 66
           NodeCount: 0
           NodeType: 1
@@ -2863,7 +2562,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node12:
-          DependencyIndex: 121
+          DependencyIndex: 104
           LevelID: 68
           NodeCount: 0
           NodeType: 1
@@ -2900,7 +2599,7 @@ Nodes:
           Title1: Float Import
           Title2: Sides
         Node13:
-          DependencyIndex: 122
+          DependencyIndex: 105
           LevelID: 69
           NodeCount: 0
           NodeType: 1
@@ -2921,7 +2620,7 @@ Nodes:
           TemplateID: nodes_math_floor
           Title1: Floor
         Node14:
-          DependencyIndex: 123
+          DependencyIndex: 106
           LevelID: 70
           NodeCount: 0
           NodeType: 1
@@ -2952,7 +2651,7 @@ Nodes:
           TemplateID: nodes_math_clamp
           Title1: Clamp
         Node15:
-          DependencyIndex: 124
+          DependencyIndex: 107
           LevelID: 71
           NodeCount: 0
           NodeType: 1
@@ -2982,7 +2681,7 @@ Nodes:
           TemplateVersionMinor: 1
           Title1: Divide
         Node16:
-          DependencyIndex: 125
+          DependencyIndex: 108
           LevelID: 74
           NodeCount: 0
           NodeType: 1
@@ -3012,7 +2711,7 @@ Nodes:
           TemplateVersionMinor: 1
           Title1: Divide
         Node17:
-          DependencyIndex: 126
+          DependencyIndex: 109
           LevelID: 75
           NodeCount: 0
           NodeType: 1
@@ -3041,7 +2740,7 @@ Nodes:
           TemplateID: nodes_math_add
           Title1: Add
         Node18:
-          DependencyIndex: 127
+          DependencyIndex: 110
           LevelID: 76
           NodeCount: 0
           NodeType: 1
@@ -3062,7 +2761,7 @@ Nodes:
           TemplateID: nodes_math_floor
           Title1: Floor
         Node19:
-          DependencyIndex: 128
+          DependencyIndex: 111
           LevelID: 77
           NodeCount: 0
           NodeType: 1
@@ -3094,7 +2793,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node2:
-          DependencyIndex: 111
+          DependencyIndex: 94
           LevelID: 33
           NodeCount: 0
           NodeType: 1
@@ -3121,7 +2820,7 @@ Nodes:
           TemplateVersionMinor: 1
           Title1: Divide
         Node20:
-          DependencyIndex: 129
+          DependencyIndex: 112
           LevelID: 78
           NodeCount: 0
           NodeType: 1
@@ -3150,7 +2849,7 @@ Nodes:
           TemplateID: nodes_math_subtract
           Title1: Subtract
         Node21:
-          DependencyIndex: 130
+          DependencyIndex: 113
           LevelID: 80
           NodeCount: 0
           NodeType: 1
@@ -3171,7 +2870,7 @@ Nodes:
           TemplateID: nodes_math_cos
           Title1: Cos
         Node22:
-          DependencyIndex: 131
+          DependencyIndex: 114
           LevelID: 81
           NodeCount: 0
           NodeType: 1
@@ -3192,7 +2891,7 @@ Nodes:
           TemplateID: nodes_math_length
           Title1: Length
         Node23:
-          DependencyIndex: 132
+          DependencyIndex: 115
           LevelID: 82
           NodeCount: 0
           NodeType: 1
@@ -3224,7 +2923,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node24:
-          DependencyIndex: 133
+          DependencyIndex: 116
           LevelID: 83
           NodeCount: 0
           NodeType: 1
@@ -3245,7 +2944,7 @@ Nodes:
           TemplateID: nodes_math_oneminus
           Title1: One Minus
         Node25:
-          DependencyIndex: 134
+          DependencyIndex: 117
           LevelID: 84
           NodeCount: 0
           NodeType: 1
@@ -3282,7 +2981,7 @@ Nodes:
           Title1: Float Import
           Title2: Softness
         Node26:
-          DependencyIndex: 135
+          DependencyIndex: 118
           LevelID: 86
           NodeCount: 0
           NodeType: 1
@@ -3316,7 +3015,7 @@ Nodes:
           TemplateID: node_math_remap
           Title1: Remap
         Node27:
-          DependencyIndex: 136
+          DependencyIndex: 119
           LevelID: 87
           NodeCount: 0
           NodeType: 1
@@ -3344,7 +3043,7 @@ Nodes:
           Title1: Float Export
           Title2: Output
         Node3:
-          DependencyIndex: 112
+          DependencyIndex: 95
           LevelID: 34
           NodeCount: 0
           NodeType: 1
@@ -3369,7 +3068,7 @@ Nodes:
           TemplateID: nodes_functions_coords_scale
           Title1: Scale Coords
         Node4:
-          DependencyIndex: 113
+          DependencyIndex: 96
           LevelID: 47
           NodeCount: 0
           NodeType: 1
@@ -3398,7 +3097,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node5:
-          DependencyIndex: 114
+          DependencyIndex: 97
           LevelID: 48
           NodeCount: 0
           NodeType: 1
@@ -3424,7 +3123,7 @@ Nodes:
           TemplateID: nodes_math_subtract
           Title1: Subtract
         Node6:
-          DependencyIndex: 115
+          DependencyIndex: 98
           LevelID: 79
           NodeCount: 0
           NodeType: 1
@@ -3444,7 +3143,7 @@ Nodes:
           TemplateID: node_channels_swizzle
           Title1: Swizzle
         Node7:
-          DependencyIndex: 116
+          DependencyIndex: 99
           LevelID: 58
           NodeCount: 0
           NodeType: 1
@@ -3464,7 +3163,7 @@ Nodes:
           TemplateID: node_channels_swizzle
           Title1: Swizzle
         Node8:
-          DependencyIndex: 117
+          DependencyIndex: 100
           LevelID: 63
           NodeCount: 0
           NodeType: 1
@@ -3493,7 +3192,7 @@ Nodes:
           TemplateID: nodes_math_multiply
           Title1: Multiply
         Node9:
-          DependencyIndex: 118
+          DependencyIndex: 101
           LevelID: 64
           NodeCount: 0
           NodeType: 1
@@ -3521,7 +3220,7 @@ Nodes:
           PositionY: -543
           TemplateID: nodes_math_atan2
           Title1: ATan2
-      DependencyIndex: 137
+      DependencyIndex: 120
       LevelID: 28
       NodeType: 3
       Ports:
@@ -3552,8 +3251,8 @@ Nodes:
       PositionY: 1639
       TemplateID: nodes_main_subgraph
       Title1: Shape
-    Node41:
-      DependencyIndex: 138
+    Node38:
+      DependencyIndex: 121
       LevelID: 88
       NodeCount: 0
       NodeType: 1
@@ -3578,8 +3277,8 @@ Nodes:
       PositionY: 1631
       TemplateID: nodes_math_smaller
       Title1: Is Less
-    Node42:
-      DependencyIndex: 139
+    Node39:
+      DependencyIndex: 122
       LevelID: 89
       NodeCount: 0
       NodeType: 1
@@ -3604,175 +3303,10 @@ Nodes:
       PositionY: 1564
       TemplateID: nodes_math_discard
       Title1: Discard
-    Node43:
-      DependencyIndex: 140
-      LevelID: 21
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Color:
-          Connection0:
-            NodeLevelID: 89
-            PortID: Output
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Color1:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Color2:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Color3:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        DynamicEnable:
-          Variable: false
-        Enabled:
-          Variable: 1.0
-        ParticleIn:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 22
-            PortID: ParticleOut
-        ParticleOut:
-          ClassType2: PARTICLE
-          IOType: 1
-        Targets:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : 4"
-      PositionX: -140
-      PositionY: 1492
-      TemplateID: node_main_particle_set_fragment_color
-      Title1: Set Color ( Pixel )
-    Node43CheckEnabled: true
-    Node43CheckExists: true
-    Node44:
-      DependencyIndex: 141
-      LevelID: 40
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Particle:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 21
-            PortID: ParticleOut
-      PositionX: -147
-      PositionY: 1496
-      TemplateID: nodes_particle_output_end
-      Title1: Particle ( Output End )
-    Node44CheckValue: false
-    Node45:
-      DependencyIndex: 142
-      LevelID: 99
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        AO:
-          ClassType1: COLOR
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Albedo:
-          ClassType1: COLOR
-          Connection0:
-            NodeLevelID: 89
-            PortID: Output
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        BitmojiShading:
-          Variable: false
-        Emissive:
-          ClassType1: COLOR
-          Variable: [0.0, 0.0, 0.0, 1.0]
-        Metallic:
-          Variable: 0.47999998927116394
-        Mode:
-          ItemIndex: 2
-          ItemList: "Diffuse and Specular : Diffuse Only : Specular Only"
-        Normal:
-          ClassType1: COLOR
-          Variable: [0.0, 0.0, 0.0, 1.0]
-        NormalSpace:
-          ItemIndex: 0
-          ItemList: "Tangent : World"
-        Opacity:
-          Variable: 1.0
-        Output:
-          ClassType1: COLOR
-          IOType: 1
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Roughness:
-          Variable: 0.0
-        SpecularAO:
-          ClassType1: COLOR
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        ToneMapping:
-          Variable: true
-      PositionX: -422
-      PositionY: 1303
-      TemplateID: nodes_main_material_brdf
-      Title1: PBR ( Lighting )
-      Title2: Specular Only
-    Node46:
-      DependencyIndex: 143
-      LevelID: 110
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        CustomSeed:
-          Variable: 0.0
-        Dimension:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : 4"
-        Max:
-          Variable: [2.0, 1.0, 1.0, 1.0]
-        Min:
-          Variable: [-2.0, 0.0, 0.0, 0.0]
-        Random:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        SeedNodeID:
-          Variable: true
-        SeedParticleID:
-          Variable: true
-        SeedTime:
-          Variable: false
-        SeedUseCustom:
-          Variable: false
-      PositionX: -647
-      PositionY: 165
-      TemplateID: node_main_particle_random
-      TemplateVersionMajor: 2
-      Title1: Particle Random
-    Node47:
-      DependencyIndex: 144
-      LevelID: 112
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        CustomSeed:
-          Variable: 0.0
-        Dimension:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : 4"
-        Max:
-          Variable: [4.0, 1.0, 1.0, 1.0]
-        Min:
-          Variable: [-2.0, 0.0, 0.0, 0.0]
-        Random:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        SeedNodeID:
-          Variable: true
-        SeedParticleID:
-          Variable: true
-        SeedTime:
-          Variable: false
-        SeedUseCustom:
-          Variable: false
-      PositionX: -647
-      PositionY: 287
-      TemplateID: node_main_particle_random
-      TemplateVersionMajor: 2
-      Title1: Particle Random
-    Node5:
+    Node4:
       ChildNodes:
         Node0:
-          DependencyIndex: 5
+          DependencyIndex: 4
           LevelID: 30
           NodeCount: 0
           NodeType: 1
@@ -3791,7 +3325,7 @@ Nodes:
           TemplateID: nodes_import_particle
           Title1: Particle ( Behavior )
         Node1:
-          DependencyIndex: 6
+          DependencyIndex: 5
           LevelID: 166
           NodeCount: 0
           NodeType: 1
@@ -3828,7 +3362,7 @@ Nodes:
           Title1: Float Import
           Title2: Size
         Node2:
-          DependencyIndex: 7
+          DependencyIndex: 6
           LevelID: 167
           NodeCount: 0
           NodeType: 1
@@ -3849,7 +3383,7 @@ Nodes:
           TemplateID: nodes_math_negate
           Title1: Negate
         Node3:
-          DependencyIndex: 8
+          DependencyIndex: 7
           LevelID: 31
           NodeCount: 0
           NodeType: 1
@@ -3886,7 +3420,7 @@ Nodes:
           TemplateVersionMajor: 2
           Title1: Particle Random
         Node4:
-          DependencyIndex: 9
+          DependencyIndex: 8
           LevelID: 174
           NodeCount: 0
           NodeType: 1
@@ -3923,7 +3457,7 @@ Nodes:
           Title1: Float Import
           Title2: Center
         Node5:
-          DependencyIndex: 10
+          DependencyIndex: 9
           LevelID: 181
           NodeCount: 0
           NodeType: 1
@@ -3955,7 +3489,7 @@ Nodes:
           TemplateID: nodes_math_add
           Title1: Add
         Node6:
-          DependencyIndex: 11
+          DependencyIndex: 10
           LevelID: 186
           NodeCount: 0
           NodeType: 1
@@ -4012,7 +3546,7 @@ Nodes:
         Node6CheckEnabled: true
         Node6CheckExists: true
         Node7:
-          DependencyIndex: 12
+          DependencyIndex: 11
           LevelID: 194
           NodeCount: 0
           NodeType: 1
@@ -4030,7 +3564,7 @@ Nodes:
           TemplateID: nodes_export_particle
           Title1: ""
         Node7CheckValue: false
-      DependencyIndex: 13
+      DependencyIndex: 12
       LevelID: 0
       NodeType: 3
       Ports:
@@ -4059,12 +3593,66 @@ Nodes:
       PositionY: -231
       TemplateID: nodes_main_container_subgraph
       Title1: Set Position Volume ( Cube )
-    Node5CheckEnabled: true
-    Node5CheckExists: true
-    Node6:
+    Node40:
+      DependencyIndex: 123
+      LevelID: 21
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Color:
+          Connection0:
+            NodeLevelID: 89
+            PortID: Output
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Color1:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Color2:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Color3:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        DynamicEnable:
+          Variable: false
+        Enabled:
+          Variable: 1.0
+        ParticleIn:
+          ClassType2: PARTICLE
+          Connection0:
+            NodeLevelID: 22
+            PortID: ParticleOut
+        ParticleOut:
+          ClassType2: PARTICLE
+          IOType: 1
+        Targets:
+          ItemIndex: 0
+          ItemList: "1 : 2 : 3 : 4"
+      PositionX: -140
+      PositionY: 1492
+      TemplateID: node_main_particle_set_fragment_color
+      Title1: Set Color ( Pixel )
+    Node40CheckEnabled: true
+    Node40CheckExists: true
+    Node41:
+      DependencyIndex: 124
+      LevelID: 40
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Particle:
+          ClassType2: PARTICLE
+          Connection0:
+            NodeLevelID: 21
+            PortID: ParticleOut
+      PositionX: -147
+      PositionY: 1496
+      TemplateID: nodes_particle_output_end
+      Title1: Particle ( Output End )
+    Node41CheckValue: false
+    Node4CheckEnabled: true
+    Node4CheckExists: true
+    Node5:
       ChildNodes:
         Node0:
-          DependencyIndex: 14
+          DependencyIndex: 13
           LevelID: 44
           NodeCount: 0
           NodeType: 1
@@ -4084,7 +3672,7 @@ Nodes:
           Title1: Particle ( Behavior )
         Node0CheckValue: false
         Node1:
-          DependencyIndex: 15
+          DependencyIndex: 14
           LevelID: 45
           NodeCount: 0
           NodeType: 1
@@ -4114,7 +3702,7 @@ Nodes:
           Title1: Droplist Import
           Title2: Size Mode
         Node2:
-          DependencyIndex: 16
+          DependencyIndex: 15
           LevelID: 46
           NodeCount: 0
           NodeType: 1
@@ -4151,7 +3739,7 @@ Nodes:
           Title1: Float Import
           Title2: Size Min
         Node3:
-          DependencyIndex: 17
+          DependencyIndex: 16
           LevelID: 49
           NodeCount: 0
           NodeType: 1
@@ -4188,7 +3776,7 @@ Nodes:
           Title1: Float Import
           Title2: Size Max
         Node4:
-          DependencyIndex: 18
+          DependencyIndex: 17
           LevelID: 50
           NodeCount: 0
           NodeType: 1
@@ -4225,7 +3813,7 @@ Nodes:
           Title1: Float Import
           Title2: Size Multiplier
         Node5:
-          DependencyIndex: 19
+          DependencyIndex: 18
           LevelID: 51
           NodeCount: 0
           NodeType: 1
@@ -4305,7 +3893,7 @@ Nodes:
         Node5CheckEnabled: true
         Node5CheckExists: true
         Node6:
-          DependencyIndex: 20
+          DependencyIndex: 19
           LevelID: 67
           NodeCount: 0
           NodeType: 1
@@ -4323,7 +3911,7 @@ Nodes:
           TemplateID: nodes_export_particle
           Title1: ""
         Node6CheckValue: false
-      DependencyIndex: 21
+      DependencyIndex: 20
       LevelID: 29
       NodeType: 3
       Ports:
@@ -4361,321 +3949,10 @@ Nodes:
       PositionY: -154
       TemplateID: nodes_main_container_subgraph
       Title1: Set Size ( Random Range )
-    Node6CheckEnabled: true
-    Node6CheckExists: true
-    Node7:
-      ChildNodes:
-        Node0:
-          DependencyIndex: 22
-          LevelID: 52
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Import:
-              ClassType2: PARTICLE
-            Title:
-              String: A
-            Tooltip:
-              String: ""
-            Value:
-              ClassType2: PARTICLE
-              IOType: 1
-          PositionX: -515
-          PositionY: 1344
-          TemplateID: nodes_import_particle
-          Title1: Particle ( Behavior )
-        Node1:
-          DependencyIndex: 23
-          LevelID: 53
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Channels:
-              ItemIndex: 6
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-            EnableMax:
-              Variable: false
-            EnableMin:
-              Variable: false
-            Group:
-              String: ""
-            Import:
-              Variable: [-450.0, 0.0, 0.0, 0.0]
-            Max:
-              Variable: 1.0
-            Min:
-              Variable: 0.0
-            SortIndex:
-              Variable: 1
-            Step:
-              Variable: 0.009999999776482582
-            Title:
-              String: Strength
-            Tooltip:
-              String: ""
-            Value:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-          PositionX: -958
-          PositionY: 1270
-          TemplateID: nodes_import_float
-          Title1: Float Import
-          Title2: Strength
-        Node2:
-          DependencyIndex: 24
-          LevelID: 54
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Channels:
-              ItemIndex: 3
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-            EnableMax:
-              Variable: false
-            EnableMin:
-              Variable: false
-            Group:
-              String: ""
-            Import:
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Max:
-              Variable: 1.0
-            Min:
-              Variable: 0.0
-            SortIndex:
-              Variable: 0
-            Step:
-              Variable: 0.009999999776482582
-            Title:
-              String: Target Position
-            Tooltip:
-              String: ""
-            Value:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-          PositionX: -1345
-          PositionY: 1355
-          TemplateID: nodes_import_float
-          Title1: Float Import
-          Title2: Target Position
-        Node3:
-          DependencyIndex: 25
-          LevelID: 55
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Access:
-              ItemIndex: 0
-              ItemList: "Local : Global"
-            Attribute:
-              ItemIndex: 0
-              ItemList: "Position : Velocity : Age : Life : Force : Delay : Seed : Mass : Color : Size : Index : Index Ratio : Age Ratio ( 0 - 1 ) : Matrix : Custom : Spawned : Copy ID"
-            Value:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            ValueMatrix:
-              ClassType1: MATRIX
-              IOType: 1
-              Variable: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
-          PositionX: -1400
-          PositionY: 1560
-          TemplateID: node_main_particle_force
-          Title1: "Particle ( Get Attribute ) "
-          Title2: Position
-        Node4:
-          DependencyIndex: 26
-          LevelID: 56
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Input0:
-              Connection0:
-                NodeLevelID: 54
-                PortID: Value
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Input1:
-              Connection0:
-                NodeLevelID: 55
-                PortID: Value
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Output:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Type0:
-              ItemIndex: 0
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-            Type1:
-              ItemIndex: 0
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-          PositionX: -1105
-          PositionY: 1435
-          TemplateID: nodes_math_subtract
-          Title1: Subtract
-        Node5:
-          DependencyIndex: 27
-          LevelID: 57
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Input0:
-              Connection0:
-                NodeLevelID: 56
-                PortID: Output
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Output:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Type0:
-              ItemIndex: 0
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-          PositionX: -935
-          PositionY: 1415
-          TemplateID: nodes_math_normalize
-          Title1: Normalize
-        Node6:
-          DependencyIndex: 28
-          LevelID: 59
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Input0:
-              Connection0:
-                NodeLevelID: 53
-                PortID: Value
-              Variable: [1.0, 1.0, 1.0, 1.0]
-            Input1:
-              Connection0:
-                NodeLevelID: 57
-                PortID: Output
-              Variable: [1.0, 1.0, 1.0, 1.0]
-            Inputs:
-              ItemIndex: 0
-              ItemList: "2 : 3 : 4 : 5 : 6"
-            Output:
-              IOType: 1
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            Type0:
-              ItemIndex: 0
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-            Type1:
-              ItemIndex: 0
-              ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-          PositionX: -729
-          PositionY: 1377
-          TemplateID: nodes_math_multiply
-          Title1: Multiply
-        Node7:
-          DependencyIndex: 29
-          LevelID: 60
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Access:
-              ItemIndex: 0
-              ItemList: "Local : Global"
-            Attribute:
-              ItemIndex: 3
-              ItemList: "Position : Velocity : Life : Force : Mass : Color : Size : Matrix : Custom"
-            Channels:
-              ItemIndex: 3
-              ItemList: "1 : 2 : 3 : 4"
-            DefaultFloat:
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            DynamicEnable:
-              Variable: false
-            Enabled:
-              Variable: 1.0
-            Info:
-              String: "Reusing existing attribute 'Custom'"
-            Name:
-              String: Custom
-            Operation:
-              ItemIndex: 1
-              ItemList: "Set : Add : Multiply"
-            ParticleIn:
-              ClassType2: PARTICLE
-              Connection0:
-                NodeLevelID: 52
-                PortID: Value
-            ParticleOut:
-              ClassType2: PARTICLE
-              IOType: 1
-            Precision:
-              ItemIndex: 0
-              ItemList: "32bit : 24bit : 16bit : 8bit"
-            RangeMax:
-              Variable: [10.0, 10.0, 10.0, 10.0]
-            RangeMin:
-              Variable: [-10.0, -10.0, -10.0, -10.0]
-            Value:
-              Connection0:
-                NodeLevelID: 59
-                PortID: Output
-              Variable: [0.0, 0.0, 0.0, 0.0]
-            ValueMatrix:
-              ClassType1: MATRIX
-              Variable: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
-          PositionX: -505
-          PositionY: 1399
-          TemplateID: node_main_particle_set_force
-          Title1: Modify Attribute ( Add Force )
-        Node7CheckEnabled: true
-        Node7CheckExists: true
-        Node8:
-          DependencyIndex: 30
-          LevelID: 62
-          NodeCount: 0
-          NodeType: 1
-          Ports:
-            Export:
-              ClassType2: PARTICLE
-              IOType: 1
-            Value:
-              ClassType2: PARTICLE
-              Connection0:
-                NodeLevelID: 60
-                PortID: ParticleOut
-          PositionX: -505
-          PositionY: 1458
-          TemplateID: nodes_export_particle
-          Title1: ""
-      DependencyIndex: 31
-      LevelID: 35
-      NodeType: 3
-      Ports:
-        Description:
-          String: ""
-        DescriptionText:
-          ClassType1: TEXT
-          String: |-
-            An attractive or repulsive force depending if the Strength is positive or negative. 
-            
-            Attractor forces have positive Strength values and repulsive forces have negative Strength values. Target Position is the position where the force is attracted to or repelled from.
-        Locked:
-          Variable: false
-        SubGraphUniqueID52:
-          ClassType2: PARTICLE
-          Connection0:
-            NodeLevelID: 29
-            PortID: SubGraphUniqueID67
-        SubGraphUniqueID53:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        SubGraphUniqueID54:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        SubGraphUniqueID62:
-          ClassType2: PARTICLE
-          IOType: 1
-        Title1:
-          String: Add Force ( Attract / Repel )
-      PositionX: -154
-      PositionY: -59
-      TemplateID: nodes_main_container_subgraph
-      Title1: Add Force ( Attract / Repel )
-    Node7CheckEnabled: true
-    Node7CheckExists: true
-    Node7CheckValue: false
-    Node8:
-      DependencyIndex: 32
+    Node5CheckEnabled: true
+    Node5CheckExists: true
+    Node6:
+      DependencyIndex: 21
       LevelID: 14
       NodeCount: 0
       NodeType: 1
@@ -4705,8 +3982,8 @@ Nodes:
         ParticleIn:
           ClassType2: PARTICLE
           Connection0:
-            NodeLevelID: 35
-            PortID: SubGraphUniqueID62
+            NodeLevelID: 29
+            PortID: SubGraphUniqueID67
         ParticleOut:
           ClassType2: PARTICLE
           IOType: 1
@@ -4723,13 +4000,13 @@ Nodes:
           ClassType1: MATRIX
           Variable: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
       PositionX: -154
-      PositionY: 18
+      PositionY: -59
       TemplateID: node_main_particle_set_force
       Title1: Modify Attribute ( Set Life )
-    Node8CheckEnabled: true
-    Node8CheckExists: true
-    Node9:
-      DependencyIndex: 33
+    Node6CheckEnabled: true
+    Node6CheckExists: true
+    Node7:
+      DependencyIndex: 22
       LevelID: 19
       NodeCount: 0
       NodeType: 1
@@ -4740,7 +4017,7 @@ Nodes:
           ItemIndex: 0
           ItemList: "1 : 2 : 3 : 4"
         Max:
-          Variable: [3.0, 1.0, 1.0, 1.0]
+          Variable: [2.0, 1.0, 1.0, 1.0]
         Min:
           Variable: [0.0, 0.0, 0.0, 0.0]
         Random:
@@ -4759,6 +4036,64 @@ Nodes:
       TemplateID: node_main_particle_random
       TemplateVersionMajor: 2
       Title1: Particle Random
+    Node8:
+      DependencyIndex: 23
+      LevelID: 20
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Channels:
+          ItemIndex: 0
+          ItemList: "rgba : rgb"
+        Default:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Group:
+          String: ""
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        ScriptName:
+          String: colorA
+        SortIndex:
+          Variable: 0
+        Tooltip:
+          String: ""
+        UniqueID:
+          String: Color A
+      PositionX: -963
+      PositionY: -50
+      TemplateID: nodes_inputs_parameters_color
+      Title1: Color Parameter
+      Title2: Color A
+    Node9:
+      DependencyIndex: 24
+      LevelID: 96
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Channels:
+          ItemIndex: 0
+          ItemList: "rgba : rgb"
+        Default:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Group:
+          String: ""
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        ScriptName:
+          String: colorB
+        SortIndex:
+          Variable: 0
+        Tooltip:
+          String: ""
+        UniqueID:
+          String: Color B
+      PositionX: -974
+      PositionY: 46
+      TemplateID: nodes_inputs_parameters_color
+      Title1: Color Parameter
+      Title2: Color B
   IsSubGraph0: true
   IsSubGraph1: true
   IsSubGraph2: true

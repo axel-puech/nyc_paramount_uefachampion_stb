@@ -5,10 +5,11 @@
 
 //@input SceneObject hintIntro
 //@input SceneObject tapToStart
-
+//@input float fade
+//@ui {"widget":"separator"}
+//@ui {"widget":"label", "label":"FLOATING "}
 //@input float amplitude
 //@input float duration
-//@input float fade
 
 // ecran noir a la fin du fade out -> chage de scene
 // plusieur images de club, les faire float
