@@ -1548,33 +1548,43 @@
       arsenalBackground: !<reference.Texture> 5790899a-fc7a-4f72-8db2-0f6b0417ac9a
       arsenalCommercialText: !<reference.Texture> 0ee73087-423f-4e2b-97bb-d1a6673d1a8d
       arsenalFinalMessage: !<reference.Texture> 53ebd875-d074-42be-b02d-4e97a0d966f7
+      arsenalVignette: !<reference.Texture> dda5ebde-2ab0-407e-acc2-49695868a6be
       bayernBackground: !<reference.Texture> 9fe10534-f49e-4c48-8bf9-22758ce25ad1
       bayernCommercialText: !<reference.Texture> 760806c2-7777-4298-be52-8b0af0e6e5d8
       bayernFinalMessage: !<reference.Texture> ddcda496-5f49-49e1-aab2-c74f2c190a33
+      bayernVignette: !<reference.Texture> 0e4087eb-6b58-45cb-8218-6f4048e6aad5
       bvbBackground: !<reference.Texture> 1e13cf53-d5a2-4fec-bd95-4322b1f47485
       bvbCommercialText: !<reference.Texture> 7e9229a1-3b9b-4208-aaf9-f874a9bfb954
       bvbFinalMessage: !<reference.Texture> 5601fcbe-a51e-4e7e-915d-3d28ff036637
+      bvbVignette: !<reference.Texture> 4a8e0273-0478-4e7f-8887-a045889e7d5d
       fcbBackground: !<reference.Texture> 6360f5be-ffd4-4374-b489-3fdbe47cd73e
       fcbCommercialText: !<reference.Texture> 5438c766-2db8-4b35-b14f-c63c4eac7416
       fcbFinalMessage: !<reference.Texture> 6f76e9eb-2d80-498a-b33b-6e33d6372531
+      fcbVignette: !<reference.Texture> 35cc659c-fef7-4cd1-8652-fb5740687e56
       lfcBackground: !<reference.Texture> 1b84f028-1077-4e4b-9bdd-7ce7963faabc
       lfcCommercialText: !<reference.Texture> d0c9ca3c-5da7-4041-bbc6-2d4a194ef5de
       lfcFinalMessage: !<reference.Texture> d9a9028c-94c3-4abb-91f1-2d2b734f8249
+      lfcVignette: !<reference.Texture> b871cc8f-b346-4ca1-93b4-cfc29a01db1b
       manCityBackground: !<reference.Texture> 9ec1a23c-280d-478f-ac9e-b4104a463de3
       manCityCommercialText: !<reference.Texture> 32f4f5cd-a904-4eef-8758-057c3d21ff19
       manCityFinalMessage: !<reference.Texture> 7345086d-f027-40a7-a3f8-37188dd3b1f8
+      manCityVignette: !<reference.Texture> ad6564bd-efe8-4780-9cba-ff5ad1161c1a
       manUBackground: !<reference.Texture> 52b92605-01e7-4a37-a1d5-a94508657ae3
       manUCommercialText: !<reference.Texture> 99218928-2a81-49fb-81f1-a06ae3460b33
       manUFinalMessage: !<reference.Texture> 4cb22b70-e7a7-4f0b-8eb5-7f27291fd1e5
+      manUVignette: !<reference.Texture> 7afc2dc5-af81-4c8e-9297-c9750d8f048e
       milanoUBackground: !<reference.Texture> 315aed13-9d04-40b0-ad7e-f509bbda5665
       milanoUCommercialText: !<reference.Texture> 4c43f6ea-7612-476e-9fbc-d915c3c64a63
       milanoUFinalMessage: !<reference.Texture> 8c982ece-d9dd-45e0-836e-b401a6942dba
+      milanoUVignette: !<reference.Texture> f017fcd2-944d-4d65-a992-b879aa9b4952
       psgUBackground: !<reference.Texture> 25da8d70-3222-4093-b01e-8c183df72f2a
       psgUCommercialText: !<reference.Texture> 239b38ce-cd66-44c9-b5a3-ef8bca20efea
       psgUFinalMessage: !<reference.Texture> d8c208a3-c937-4c78-902c-20ad9ab5f6d3
+      psgUVignette: !<reference.Texture> 4817d9ed-c3c0-464f-92b9-53d4a3e4003a
       realBackground: !<reference.Texture> ae136327-72a1-45a1-be94-118832a782de
       realCommercialText: !<reference.Texture> 1e4235fd-2c14-439a-a014-c20f0c0b7bc8
       realFinalMessage: !<reference.Texture> 1c1a352d-d21b-4927-af09-e03fbad2f950
+      realVignette: !<reference.Texture> 3272557b-b0f8-4688-b2d4-89ad2f74b126
   ScriptTypes:
     "":
       {}

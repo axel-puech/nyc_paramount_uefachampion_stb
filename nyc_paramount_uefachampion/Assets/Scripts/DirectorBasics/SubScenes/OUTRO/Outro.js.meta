@@ -30,37 +30,47 @@
     arsenalBackground: false
     arsenalCommercialText: false
     arsenalFinalMessage: false
+    arsenalVignette: false
     background: false
     bayernBackground: false
     bayernCommercialText: false
     bayernFinalMessage: false
+    bayernVignette: false
     bvbBackground: false
     bvbCommercialText: false
     bvbFinalMessage: false
+    bvbVignette: false
     commercialText: false
     fcbBackground: false
     fcbCommercialText: false
     fcbFinalMessage: false
+    fcbVignette: false
     finalMessage: false
     lfcBackground: false
     lfcCommercialText: false
     lfcFinalMessage: false
+    lfcVignette: false
     manCityBackground: false
     manCityCommercialText: false
     manCityFinalMessage: false
+    manCityVignette: false
     manUBackground: false
     manUCommercialText: false
     manUFinalMessage: false
+    manUVignette: false
     milanoUBackground: false
     milanoUCommercialText: false
     milanoUFinalMessage: false
+    milanoUVignette: false
     parent: false
     psgUBackground: false
     psgUCommercialText: false
     psgUFinalMessage: false
+    psgUVignette: false
     realBackground: false
     realCommercialText: false
     realFinalMessage: false
+    realVignette: false
     vignetteOutro: false
   ScriptTypesHidden:
     {}
@@ -79,33 +89,43 @@
       arsenalBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       arsenalCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       arsenalFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      arsenalVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       bayernBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       bayernCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       bayernFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      bayernVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       bvbBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       bvbCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       bvbFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      bvbVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       fcbBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       fcbCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       fcbFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      fcbVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       lfcBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       lfcCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       lfcFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      lfcVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       manCityBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       manCityCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       manCityFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      manCityVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       manUBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       manUCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       manUFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      manUVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       milanoUBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       milanoUCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       milanoUFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      milanoUVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       psgUBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       psgUCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       psgUFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      psgUVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       realBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       realCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       realFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      realVignette: !<reference.Texture> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
