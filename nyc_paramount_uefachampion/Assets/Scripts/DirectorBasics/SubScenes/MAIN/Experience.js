@@ -66,6 +66,7 @@ const answerListener = script.subScene.CreateListener("AnswerEvent", OnAnswer);
 //_________________________Director_Functions_____________________//
 function Start() {
   global.currentRound = 1;
+  print("in start experience global.currentRound: " + global.currentRound);
 }
 function OnLateStart() {}
 function Update() {}
@@ -94,6 +95,7 @@ function Stop() {
 //___________________________Functions__________________________//
 
 function OnAnswer(answerId) {
+  global.currentRound++;
   if (!firstAnswer) {
     fadeHintTap.GoTo(0);
     firstAnswer = true;

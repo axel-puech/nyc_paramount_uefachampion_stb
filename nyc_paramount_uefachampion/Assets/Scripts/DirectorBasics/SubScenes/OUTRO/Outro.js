@@ -3,6 +3,7 @@
 //@input SceneObject background
 //@input SceneObject commercialText
 //@input SceneObject finalMessage
+//@input SceneObject vignetteOutro
 
 //@ui {"widget":"separator"}
 //@ui {"widget":"label", "label":"ARSENAL "}
@@ -75,8 +76,9 @@ script.subScene.SetUpdate(Update);
 const backgroundImage = script.background.getComponent("Component.Image");
 const commercialTextImage = script.commercialText.getComponent("Component.Image");
 const finalMessageImage = script.finalMessage.getComponent("Component.Image");
+const vignetteOutroImage = script.vignetteOutro.getComponent("Component.Image");
 
-const outroElements = [backgroundImage, commercialTextImage, finalMessageImage];
+const outroElements = [backgroundImage, commercialTextImage, finalMessageImage, vignetteOutroImage];
 
 const backgroundTextures = [
   script.arsenalBackground,
@@ -143,7 +145,7 @@ function setOutroTextures() {
 
 //___________________________Animations_________________________//
 
-const fadeOutro = new Animation(script.getSceneObject(), 0.5, (ratio) => {
+const fadeOutro = new Animation(script.getSceneObject(), 1, (ratio) => {
   outroElements.forEach((element) => {
     element.mainPass.alphaRatio = ratio;
   });

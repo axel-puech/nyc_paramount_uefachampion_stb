@@ -61,6 +61,7 @@
     realBackground: false
     realCommercialText: false
     realFinalMessage: false
+    vignetteOutro: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -74,6 +75,7 @@
       background: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       commercialText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       finalMessage: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      vignetteOutro: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       arsenalBackground: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       arsenalCommercialText: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       arsenalFinalMessage: !<reference.Texture> 00000000-0000-0000-0000-000000000000

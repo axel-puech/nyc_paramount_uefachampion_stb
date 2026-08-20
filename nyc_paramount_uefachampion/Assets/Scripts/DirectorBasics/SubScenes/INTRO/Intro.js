@@ -37,12 +37,19 @@ const tapToStartImage = script.tapToStart.getComponent("Image");
 
 //_________________________Director_Functions_____________________//
 function Start() {
+  print("global.currentRound: " + global.currentRound);
+
   Instantiation();
   fadeBlackOverlay.JumpTo(1);
   fadeChooseYourClub.JumpTo(1);
   fadeHint.JumpTo(1);
 }
 function OnLateStart() {
+  // if (global.currentRound >= 1) {
+  //   print("on intro but game started");
+  //   script.subScene.CallEnd(null);
+  // }
+
   floatingClubArray.forEach((element, index) => {
     element._anims.float.Start(-1);
     element._anims.fade.GoTo(1);

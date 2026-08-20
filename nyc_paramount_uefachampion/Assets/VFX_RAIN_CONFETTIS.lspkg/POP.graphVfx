@@ -3717,7 +3717,7 @@ Nodes:
             Group:
               String: ""
             Import:
-              Variable: [1.0, 0.0, 0.0, 0.0]
+              Variable: [1.5, 0.0, 0.0, 0.0]
             Max:
               Variable: 1.0
             Min:
@@ -3754,7 +3754,7 @@ Nodes:
             Group:
               String: ""
             Import:
-              Variable: [2.0, 0.0, 0.0, 0.0]
+              Variable: [2.5, 0.0, 0.0, 0.0]
             Max:
               Variable: 1.0
             Min:
