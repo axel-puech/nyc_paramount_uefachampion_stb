@@ -321,6 +321,23 @@
     []
   Components:
     - !<own> a95c4842-015c-4837-bbe1-2ef2fec22053
+- !<AudioComponent/17f4a8a7-1d97-4049-b7eb-2a1f76de07b4>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> dd1fce4b-6d79-43b0-80f1-d9aca178c9ae
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/19886be9-bab4-4342-8946-72bf3af11dc1>
   PrefabRemaps:
     []
@@ -802,6 +819,7 @@
   Children:
     - !<own> 3e278f86-55a2-45e7-97bd-08b14fb05ce6
     - !<own> d610f339-d8c5-458b-b7c1-7bd2bbab33c3
+    - !<own> ac2acb46-7b70-4108-86c7-52bb56a4ce9a
   Components:
     []
 - !<Image/37920ec8-95ea-4171-9ef5-6657344d1c83>
@@ -982,6 +1000,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/3cfed714-2f2b-4d9d-83bf-fa6063ce61c0>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> d0519ecb-6700-4f5a-a4f1-f58f261cb587
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/3d828921-3284-4b4a-b804-cd210c581ef3>
   PrefabRemaps:
     []
@@ -1829,6 +1864,7 @@
       LOOP_music: !<reference.AudioComponent[]>
         - !<reference> b81190ec-8232-4d97-afef-60e3ceb25055
         - !<reference> 64762903-0be4-4b41-b5fe-dcd26e9ae5af
+      finalReveal: !<reference.AudioComponent> 17f4a8a7-1d97-4049-b7eb-2a1f76de07b4
   ScriptTypes:
     "":
       {}
@@ -1935,6 +1971,7 @@
         - !<reference> 480372e8-15a2-49f5-bfd8-859e0358adc1
         - !<reference> fe247955-5bb6-4db4-b252-e75b15f5d00d
         - !<reference> b11a3152-d893-43dc-8c1a-6ea0e41439e8
+      tapSelect: !<reference.AudioComponent> 3cfed714-2f2b-4d9d-83bf-fa6063ce61c0
   ScriptTypes:
     "":
       {}
@@ -1943,7 +1980,7 @@
     []
   Name: Audio
   Enabled: true
-  AudioTrack: !<reference> 00000000-0000-0000-0000-000000000000
+  AudioTrack: !<reference> 30faaf56-1777-4de7-ad5c-b3a52ce7a5a6
   EnableAutoplayLoop: true
   Volume: 1.000000
   EnableMixToSnap: false
@@ -2725,23 +2762,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<AudioComponent/8781a527-f3e5-4fa9-878a-830b649cb520>
-  PrefabRemaps:
-    []
-  Name: Audio
-  Enabled: true
-  AudioTrack: !<reference> 00000000-0000-0000-0000-000000000000
-  EnableAutoplayLoop: false
-  Volume: 1.000000
-  EnableMixToSnap: false
-  RecordVolume: 1.000000
-  EnableSpatialAudio: false
-  EnableDistanceEffect: false
-  CurveType: Logarithm
-  MinDistance: 0.000000
-  MaxDistance: 100.000000
-  EnableDirectivityEffect: false
-  EnablePositionEffect: false
 - !<SceneObject/8c06261f-fc32-405f-883e-526dad2abe22>
   PrefabRemaps:
     []
@@ -2769,7 +2789,8 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    - !<own> eb3760bd-9118-4196-88cd-7981df609029
+    - !<own> fdb0545d-8487-4ed0-8bd9-ecedb1786a6a
+    - !<own> d6c2c7ff-8506-49d8-bc8a-5f3912a71a76
   Components:
     []
 - !<Image/8fea165a-c375-4de6-a2fe-e3631841da0d>
@@ -3502,7 +3523,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> fae6cfc1-f01c-4032-81aa-dc41b0a08dd5
-    - !<own> ac2acb46-7b70-4108-86c7-52bb56a4ce9a
     - !<own> ce3ccbc7-47b1-4d88-9be1-414e20ffd60a
     - !<own> d71981d4-9696-40bf-9838-edb2e0f2dbc8
     - !<own> edb1e825-ec9a-469f-8f00-5f22efece647
@@ -3599,7 +3619,7 @@
     []
   Name: Audio
   Enabled: true
-  AudioTrack: !<reference> 00000000-0000-0000-0000-000000000000
+  AudioTrack: !<reference> 781b7731-ebce-4a3e-9c70-07fd76407da9
   EnableAutoplayLoop: true
   Volume: 1.000000
   EnableMixToSnap: false
@@ -3807,6 +3827,7 @@
       subScenes: !<reference.ScriptComponent[]>
         - !<reference> 55e93907-79be-4652-9163-2aca60a6396c
         - !<reference> 68a9395f-5745-4298-b99c-95395a5a33a9
+        - !<reference> 60634560-bf76-4567-9c1f-15481b81b305
   ScriptTypes:
     "":
       {}
@@ -4106,6 +4127,21 @@
     []
   Components:
     - !<own> 55e93907-79be-4652-9163-2aca60a6396c
+- !<SceneObject/d6c2c7ff-8506-49d8-bc8a-5f3912a71a76>
+  PrefabRemaps:
+    []
+  Name: PrmtUEFA_SFX_final_reveal
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 17f4a8a7-1d97-4049-b7eb-2a1f76de07b4
 - !<SceneObject/d71981d4-9696-40bf-9838-edb2e0f2dbc8>
   PrefabRemaps:
     []
@@ -4436,7 +4472,6 @@
         - !<reference> f26800f0-be29-4258-a0ff-d74428023914
         - !<reference> 63c13832-012f-4e0d-b051-4aad0668dd87
         - !<reference> 20d279bf-a5e4-4e6a-a769-399f86401cfc
-        - !<reference> 60634560-bf76-4567-9c1f-15481b81b305
   ScriptTypes:
     "":
       {}
@@ -4508,21 +4543,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<SceneObject/eb3760bd-9118-4196-88cd-7981df609029>
-  PrefabRemaps:
-    []
-  Name: Sfx_1
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 8781a527-f3e5-4fa9-878a-830b649cb520
 - !<ScreenTransform/ec039b0d-19a4-4053-9060-a8d38dbe633f>
   PrefabRemaps:
     []
@@ -4869,6 +4889,21 @@
     bottom: -10.000000
     right: 4.125000
     top: 10.000000
+- !<SceneObject/fdb0545d-8487-4ed0-8bd9-ecedb1786a6a>
+  PrefabRemaps:
+    []
+  Name: PrmtUEFA_SFX_tap_select
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3cfed714-2f2b-4d9d-83bf-fa6063ce61c0
 - !<SceneObject/fe3f535c-3b43-48f3-873a-5efd2481041d>
   PrefabRemaps:
     []

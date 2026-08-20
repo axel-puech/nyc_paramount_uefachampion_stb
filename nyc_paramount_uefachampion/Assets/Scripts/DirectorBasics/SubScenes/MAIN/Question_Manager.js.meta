@@ -43,6 +43,7 @@
     parent: false
     questionSceneObject: false
     questionTextures: false
+    tapSelect: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -75,6 +76,7 @@
         []
       answerCTextures_1: !<reference.Texture[]>
         []
+      tapSelect: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

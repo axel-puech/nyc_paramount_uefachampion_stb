@@ -26,6 +26,8 @@
 //@input Asset.Texture[] answerCTextures_0
 //@input Asset.Texture[] answerCTextures_1
 
+//@input Component.AudioComponent tapSelect
+
 //_________________________Director Setup_________________________//
 script.subScene = new global.SubScene(script, script.parent);
 script.subScene.OnStart = Start;
@@ -88,6 +90,7 @@ function setQuestionTexture(currentRound = 0) {
 }
 
 function answerClicked() {
+  script.tapSelect.play(1);
   if (currentRound < numberRounds) {
     answerArray.forEach((element) => {
       element.ToggleInteraction(false);

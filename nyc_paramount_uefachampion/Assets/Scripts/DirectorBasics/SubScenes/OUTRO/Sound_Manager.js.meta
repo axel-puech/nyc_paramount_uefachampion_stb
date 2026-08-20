@@ -28,6 +28,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     LOOP_music: false
+    finalReveal: false
     parent: false
   ScriptTypesHidden:
     {}
@@ -41,6 +42,7 @@
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       LOOP_music: !<reference.AudioComponent[]>
         []
+      finalReveal: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
