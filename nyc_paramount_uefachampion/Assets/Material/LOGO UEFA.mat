@@ -1,9 +1,12 @@
-- !<Material/52f16361-3746-48d3-a9cd-5fe2ed4339bc>
+- !<Material/491de7a7-5af2-46af-9c04-00c71d52d97f>
   PackagePath: ""
   PassesInfo:
-    - !<own> 0db43539-0c40-4de9-b0f7-c2635b6503b9
-- !<PassInfo/0db43539-0c40-4de9-b0f7-c2635b6503b9>
+    - !<own> 072dd5b4-6171-4479-aae7-fcf4ee516297
+- !<PassInfo/072dd5b4-6171-4479-aae7-fcf4ee516297>
   CachedProperties:
+    - Port_Default_N369:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     - Port_Depth_N004:
         typeIdx: 1
         value: 1.000000
@@ -28,13 +31,22 @@
     - Port_Input0_N033:
         typeIdx: 1
         value: 1.000000
-    - Port_Input1_N033:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_Input0_N036:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Input1_N036:
+        typeIdx: 1
+        value: 1.000000
     - Port_LODValue_N002:
         typeIdx: 1
         value: 0.000000
     - Port_LODValue_N003:
+        typeIdx: 1
+        value: 0.000000
+    - Port_LODValue_N032:
+        typeIdx: 1
+        value: 0.000000
+    - Port_LODValue_N033:
         typeIdx: 1
         value: 0.000000
     - Port_PrevWorldPosition_N004:
@@ -52,10 +64,22 @@
     - Port_Speed_N063:
         typeIdx: 1
         value: 1.000000
+    - Port_UVCoord_N032:
+        typeIdx: 3
+        value: {x: 0.000000, y: 0.000000}
+    - Port_UVCoord_N033:
+        typeIdx: 3
+        value: {x: 0.000000, y: 0.000000}
     - Port_Value3_N001:
         typeIdx: 1
         value: 0.000000
+    - Port_Value3_N042:
+        typeIdx: 1
+        value: 0.000000
     - Port_Value4_N001:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Value4_N042:
         typeIdx: 1
         value: 0.000000
     - Port_WorldNormal_N004:
@@ -67,18 +91,6 @@
     - Port_WorldTangent_N004:
         typeIdx: 4
         value: {x: 0.000000, y: 0.000000, z: 1.000000}
-    - baseTex:
-        typeIdx: 9
-        value:
-          id: e1926655-2b3b-45aa-b89d-51523cc01379
-          sampler:
-            filteringMode: Trilinear
-            wrapModeU: ClampToEdge
-            wrapModeV: ClampToEdge
-            wrapModeW: ClampToEdge
-            borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-            mipmaps: false
-          type: Texture2D
   DepthWrite: false
   DepthTest: false
   DepthFunction: LessEqual
@@ -94,14 +106,12 @@
     - NODE_27_DROPLIST_ITEM 0
     - NODE_49_DROPLIST_ITEM 0
     - NODE_69_DROPLIST_ITEM 0
+    - ENABLE_BASE_TEX
   BlendMode: PremultipliedAlphaAuto
   Properties:
     Port_Default_N204:
       typeIdx: 1
       value: 1.000000
-    Port_Default_N369:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     PreviewEnabled:
       typeIdx: 0
       value: 0
@@ -110,5 +120,17 @@
       value: 1.000000
     baseColor:
       typeIdx: 5
-      value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.500008}
-  Pass: !<reference> 0d72ab0d-ef29-4d3e-9b6c-3a683605c92a
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 33a095df-2d20-4c41-9f26-cdd031f36a9d
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: ClampToEdge
+          wrapModeV: ClampToEdge
+          wrapModeW: ClampToEdge
+          borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+          mipmaps: false
+        type: Texture2D
+  Pass: !<reference> 09cf2491-8b61-4b43-8644-99fcb07cc225

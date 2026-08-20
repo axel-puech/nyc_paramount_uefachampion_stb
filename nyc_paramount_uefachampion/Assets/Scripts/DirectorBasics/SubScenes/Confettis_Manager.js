@@ -144,13 +144,13 @@ function Start() {}
 function OnLateStart() {
   setConfettisColor();
   script.vfxConfettis.asset.properties["killParticles"] = 1;
-  animSpawnAmount.GoTo(0.2);
+  // animSpawnAmount.GoTo(0.6);
 }
 function Update() {}
 
 function Stop() {
   script.vfxConfettis.asset.properties["killParticles"] = 1;
-  animSpawnAmount.Reset();
+  // animSpawnAmount.Reset();
 }
 //___________________________Functions__________________________//
 

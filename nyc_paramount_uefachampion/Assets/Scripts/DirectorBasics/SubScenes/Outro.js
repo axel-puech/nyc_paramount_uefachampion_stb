@@ -145,6 +145,6 @@ function setOutroTextures() {
 
 const fadeOutro = new Animation(script.getSceneObject(), 0.5, (ratio) => {
   outroElements.forEach((element) => {
-    element.mainPass.baseColor = new vec4(1, 1, 1, ratio);
+    element.mainPass.alphaRatio = ratio;
   });
 });

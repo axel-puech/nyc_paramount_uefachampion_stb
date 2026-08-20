@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/7d0f47ee-0d64-88ec-1052-7fb98c163620>
+  ImportedAssetIds:
+    VFXGraph: !<reference> 82eacab9-8930-4fe1-bfbf-c817d7e23d92
+  ImporterName: VFXAssetImporter
+  PrimaryAsset: !<reference> 82eacab9-8930-4fe1-bfbf-c817d7e23d92
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    VFXGraph: !<own> 227b5ffd-5ab7-41b6-95aa-567578ddc9ef
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXAssetData/227b5ffd-5ab7-41b6-95aa-567578ddc9ef>
+  SystemPassProperties:
+    0: !<VFXSystemPassProperties>
+      PassPropertiesMap:
+        render_0_0: !<VFXPassProperties>
+          PropertyMap:
+            {}
+          Defines:
+            []
+          Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+        simulate_0: !<VFXPassProperties>
+          PropertyMap:
+            killParts:
+              typeIdx: 1
+              value: 0.000000
+            spawnAmount:
+              typeIdx: 1
+              value: 0.710000
+            colorA:
+              typeIdx: 5
+              value: {x: 0.721569, y: 0.325444, z: 0.262699, w: 1.000000}
+            colorB:
+              typeIdx: 5
+              value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+            colorC:
+              typeIdx: 5
+              value: {x: 0.662745, y: 0.623529, z: 0.458747, w: 1.000000}
+          Defines:
+            []
+          Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+        feedback_0: !<VFXPassProperties>
+          PropertyMap:
+            {}
+          Defines:
+            []
+          Mesh: !<reference> 00000000-0000-0000-0000-000000000000

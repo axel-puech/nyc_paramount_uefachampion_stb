@@ -37,7 +37,7 @@ const tapToStartImage = script.tapToStart.getComponent("Image");
 //_________________________Director_Functions_____________________//
 function Start() {
   Instantiation();
-  fadeBlackOverlay.JumpTo(0.5);
+  fadeBlackOverlay.JumpTo(1);
   fadeChooseYourClub.JumpTo(1);
   fadeHint.JumpTo(1);
 }
