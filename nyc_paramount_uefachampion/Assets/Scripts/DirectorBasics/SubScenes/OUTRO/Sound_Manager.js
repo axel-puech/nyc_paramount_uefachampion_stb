@@ -14,8 +14,6 @@ script.subScene.SetUpdate(Update);
 // const gameEndListener = script.subScene.CreateListener("gameEndEvent", OnGameEnd);
 //________DelayEvent________//
 
-script.LOOP_music[0].volume = 1;
-script.LOOP_music[1].volume = 0;
 //_________________________Director_Functions_____________________//
 function Start() {
   crossFadeMusic.Reset();
@@ -26,7 +24,10 @@ function OnLateStart() {
   script.finalReveal.play(1);
 }
 function Update() {}
-function Stop() {}
+function Stop() {
+  script.LOOP_music[0].volume = 1;
+  script.LOOP_music[1].volume = 0;
+}
 //___________________________Functions__________________________//
 // function OnGameEnd() {
 //   print("fading music");

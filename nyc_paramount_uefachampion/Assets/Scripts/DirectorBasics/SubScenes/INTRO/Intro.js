@@ -60,6 +60,7 @@ function Stop() {
   fadeBlackOverlay.Reset();
   fadeChooseYourClub.Reset();
   fadeHint.Reset();
+  hasTapped = false;
 }
 //___________________________Functions__________________________//
 
